@@ -1,7 +1,9 @@
 .home{
     width: 100%;
-    border: 1px solid red;
-    height: min-content;
+
+    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    margin-top: 10vh;
+
 }

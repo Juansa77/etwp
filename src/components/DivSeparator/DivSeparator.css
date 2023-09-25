@@ -1,0 +1,7 @@
+.div-separator{
+    min-height: 90vh;
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    border: 1px solid green;
+}
