@@ -1,0 +1,46 @@
+.heroContainer{
+
+    width: 100%;
+    min-height: 120vh;
+    background-image: url("fondo elena wp.jpg");
+    background-position: 70% 70%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.frontalHero{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+
+.frontalImage {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    object-fit: cover;
+    z-index: 1;
+    position: absolute;
+    font-size: 25vh;
+    top: 36%; /* Alinea verticalmente el texto en el centro */
+    left: 50%; /* Alinea horizontalmente el texto en el centro */
+    transform: translate(-50%, -50%); /* Centra el texto */
+    color: white; /* Color del texto */
+    padding: 10px;
+    z-index: 1; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
+  }
+  
+  .heroText {
+
+    width: 100%;
+    font-size: 25vh;
+    color: azure;
+    z-index: 0;
+    top:20%;
+    position: relative;
+    transform: translate(5%, 5%); 
+ 
+ 
+  }

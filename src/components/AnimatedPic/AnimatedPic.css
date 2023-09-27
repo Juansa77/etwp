@@ -1,0 +1,24 @@
+.animated-pic-container{
+    min-height: 60vh;
+    width: 50vw;
+
+    display: flex;
+    overflow: hidden; 
+ 
+}
+
+.animated-pic{
+    padding: 4vh;
+
+  transform: translateX(-100%); /* Inicialmente fuera de la pantalla a la izquierda */
+  transition: transform 1.5s ease;
+  border: 1px solid rgb(228, 228, 214);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ 
+}
+
+.picAnimated{
+  border: 1px solid rgb(219, 214, 214);
+}
