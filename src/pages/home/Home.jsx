@@ -3,7 +3,7 @@ import AnimatedText from "../../components/AnimatedText/AnimatedText";
 import AnimatedPic from "../../components/AnimatedPic/AnimatedPic";
 import DivSeparator from "../../components/DivSeparator/DivSeparator";
 import HeroSection from "../../components/HeroSection/HeroSection";
-HeroSection
+import { useEffect } from "react";
 
 const Home = () => {
   return (
