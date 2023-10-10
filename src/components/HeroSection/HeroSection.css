@@ -33,7 +33,8 @@ align-items: flex-start;
     transform: translate(-50%, -50%); /* Centra el texto */
     color: white; /* Color del texto */
     padding: 10px;
-    z-index: 1; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
+    z-index: 1;
+    transition:  2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
   }
   
   .heroText {
@@ -45,7 +46,7 @@ align-items: flex-start;
     top:20%;
     position: relative;
     transform: translate(5%, 5%); 
- 
+
  
   }
 
