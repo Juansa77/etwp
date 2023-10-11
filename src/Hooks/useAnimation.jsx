@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // Definimos el hook personalizado con valores iniciales como argumentos
 function useAnimation(initialValue = 50, minValue = 50, maxValue = 60) {
   const [frontalAnimation, setFrontalAnimation] = useState(initialValue);
-  const [animationDirection, setAnimationDirection] = useState(4);
+  const [animationDirection, setAnimationDirection] = useState(3);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -12,7 +12,7 @@ function useAnimation(initialValue = 50, minValue = 50, maxValue = 60) {
       if (frontalAnimation === minValue || frontalAnimation === maxValue) {
         setAnimationDirection((prevDirection) => -prevDirection);
       }
-    }, 900);
+    }, 1900);
 
     return () => {
       clearInterval(interval);

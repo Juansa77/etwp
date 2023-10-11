@@ -1,6 +1,8 @@
 
+import useAnimation from "../../Hooks/useAnimation";
 import "./HeroSection.css";
 import { useState, useEffect, useRef } from "react";
+
 
 
 const HeroSection = () => {
@@ -13,29 +15,57 @@ const HeroSection = () => {
   const [isTextAnimationComplete, setIsTextAnimationComplete] = useState(false);
   const [currentOpacity, setCurrentOpacity] = useState(100);
   const [timesIncreased, setTimesIncreased] = useState(0);
-  const [frontalAnimation, setFrontalAnimation] = useState(50);
-  const [animationDirection, setAnimationDirection] = useState(2);
 
-  //*Funcionalidad para animación de imagen frontal
+
+
+  const [number, setNumber] = useState(10);
+  const [increasing, setIncreasing] = useState(true);
+//* FUNCIÓN PARA ACRECENTAR Y DECRECENTAR
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (increasing) {
+        setNumber((prevNumber) => prevNumber + 1);
+        //*SI llega a 20, seteamos a false
+        if (number === 20) {
+          setIncreasing(false);
+        }
+      } else {
+        setNumber((prevNumber) => prevNumber - 1);
+        if (number === 10) {
+          setIncreasing(true);
+        }
+      }
+    }, 1000); // Intervalo de 1 segundo (1000 ms)
+
+    return () => {
+      clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta
+    };
+  }, [number, increasing]);
+
+
+ 
+
+  //*Funcionalidad para animación de imagen frontal-----------------
+  const frontalAnimation = useAnimation(50, 49, 50);
+  /*
   useEffect(() => {
     const interval = setInterval(() => {
       // Incrementar o disminuir el valor de frontalAnimation según la dirección
       setFrontalAnimation((prevValue) => prevValue + animationDirection);
 
       // Cambiar la dirección cuando alcanza 50 o 60
-      if(frontalAnimation === 50 || frontalAnimation === 56)  {
+      if(frontalAnimation === 49 || frontalAnimation === 51)  {
         setAnimationDirection((prevDirection) => -prevDirection );
       }
-    }, 1000);
+    }, 2000);
 
     // Limpiar el intervalo cuando el componente se desmonte
     return () => {
       clearInterval(interval);
     };
-  }, [frontalAnimation, animationDirection]);
+  }, [frontalAnimation]);*/
 
 
-console.log(frontalAnimation)
   //*------------ Función para verificar si el elemento es visible-----------------
   const checkVisibility = () => {
     //* Apuntamos al ref del texto que vamos a animar
@@ -90,10 +120,12 @@ console.log(frontalAnimation)
   }, []);
   //*----UseEffect para aplicar la clase en caso de que sea visible
   useEffect(() => {
+  
     // Aplica la animación cuando el elemento es visible
-    if (isVisible && isTextAnimationComplete) {
-      animatedText.current.style.transform = "translateX(0)";
-      animatedText.current.style.opacity = "80%";
+    if ( isTextAnimationComplete) {
+   
+      animatedText.current.style.transform = "translateX(10%)";
+      animatedText.current.style.top = "10%";
 
       if (isTextAnimationComplete) {
         animatedSubText.current.style.opacity = "100%";
@@ -111,7 +143,7 @@ console.log(frontalAnimation)
 
           //* Reducimos la opacidad en 10 por cada vez que se supera 1000
           setCurrentOpacity((prevOpacity) => prevOpacity - timesIncreased);
-          console.log(currentOpacity);
+          
         }
 
         if (scrollTotal < 100) {
@@ -128,8 +160,7 @@ console.log(frontalAnimation)
       animatedText.current.style.transition = "opacity 2.5s ease";
     }
   }, [isVisible, isTextAnimationComplete, scrollTotal, currentOpacity,frontalAnimation]);
-  console.log(currentOpacity);
-  console.log(scrollTotal);
+ 
 
   /*
 
@@ -151,9 +182,6 @@ console.log(frontalAnimation)
         />
         <h1
           className={`animated-hero-text ${isVisible ? "visible" : ""}`}
-          style={{
-            transform: "translateY(-100%)",
-          }}
           ref={animatedText}
         >
           ELENA TEJEDOR
