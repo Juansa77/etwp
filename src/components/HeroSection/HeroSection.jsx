@@ -1,7 +1,8 @@
 
-import useAnimation from "../../Hooks/useAnimation";
+import useAnimationBounce from "../../Hooks/useAnimationBounce";
 import "./HeroSection.css";
 import { useState, useEffect, useRef } from "react";
+useAnimationBounce
 
 
 
@@ -18,53 +19,12 @@ const HeroSection = () => {
 
 
 
-  const [number, setNumber] = useState(10);
-  const [increasing, setIncreasing] = useState(true);
-//* FUNCIÓN PARA ACRECENTAR Y DECRECENTAR
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (increasing) {
-        setNumber((prevNumber) => prevNumber + 1);
-        //*SI llega a 20, seteamos a false
-        if (number === 20) {
-          setIncreasing(false);
-        }
-      } else {
-        setNumber((prevNumber) => prevNumber - 1);
-        if (number === 10) {
-          setIncreasing(true);
-        }
-      }
-    }, 1000); // Intervalo de 1 segundo (1000 ms)
-
-    return () => {
-      clearInterval(interval); // Limpia el intervalo cuando el componente se desmonta
-    };
-  }, [number, increasing]);
-
 
  
 
   //*Funcionalidad para animación de imagen frontal-----------------
-  const frontalAnimation = useAnimation(50, 49, 50);
-  /*
-  useEffect(() => {
-    const interval = setInterval(() => {
-      // Incrementar o disminuir el valor de frontalAnimation según la dirección
-      setFrontalAnimation((prevValue) => prevValue + animationDirection);
 
-      // Cambiar la dirección cuando alcanza 50 o 60
-      if(frontalAnimation === 49 || frontalAnimation === 51)  {
-        setAnimationDirection((prevDirection) => -prevDirection );
-      }
-    }, 2000);
-
-    // Limpiar el intervalo cuando el componente se desmonte
-    return () => {
-      clearInterval(interval);
-    };
-  }, [frontalAnimation]);*/
-
+const frontalAnimation= useAnimationBounce()
 
   //*------------ Función para verificar si el elemento es visible-----------------
   const checkVisibility = () => {

@@ -1,0 +1,32 @@
+.animation-linear-container {
+  min-height: 60vh;
+  width: 100%;
+
+  display: flex;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-items: flex-start;
+  gap: 2vh;
+}
+
+.circle-div {
+  position: relative;
+  height: 20vh;
+  width: 10vw;
+  border-radius: 100%;
+  background-color: red;
+  left: 0%;
+  transition: ease-in-out;
+}
+
+.circle-div2 {
+  position: relative;
+  height: 20vh;
+  width: 10vw;
+  border-radius: 100%;
+  background-color: rgb(17, 0, 255);
+
+  transition: ease-in-out;
+}
