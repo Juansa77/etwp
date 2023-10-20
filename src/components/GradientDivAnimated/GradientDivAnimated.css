@@ -1,0 +1,17 @@
+.gradient-animated-container{
+    height: 70vh;
+    width: 100%;
+    transition: background-image 5s ease-in-out;
+    position: relative;
+    padding: 5vh;
+    overflow: hidden;
+
+}
+
+.gradientText{
+    font-size: 15vh;
+    color: beige;
+    position: absolute;
+    width: 100%;
+    left: 20%;
+}

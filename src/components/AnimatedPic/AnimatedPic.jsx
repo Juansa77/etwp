@@ -45,6 +45,18 @@ const AnimatedPic = ({ direction, pic, form }) => {
     // Aplica la animación cuando el elemento es visible
     if (isVisible) {
       animatedTextRef.current.style.transform = "translateX(0)";
+    }else{
+      if(direction=="left"){
+        animatedTextRef.current.style.transform = "translateX(-100%)";
+      }
+      if(direction=="right"){
+        animatedTextRef.current.style.transform = "translateX(100%)";
+      }
+      
+      if(direction=="up"){
+        animatedTextRef.current.style.transform = "translateY(50%)";
+      }
+      
     }
   }, [isVisible]);
 

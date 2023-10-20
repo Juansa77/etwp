@@ -11,7 +11,7 @@
     padding: 4vh;
 
   transform: translateX(-100%); /* Inicialmente fuera de la pantalla a la izquierda */
-  transition: transform 1.5s ease;
+  transition: transform 2.5s ease;
   border: 1px solid rgb(228, 228, 214);
   display: flex;
   width: 100%;
