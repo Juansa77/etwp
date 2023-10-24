@@ -18,9 +18,7 @@ const GradientDivAnimated = () => {
     animatedTextGradient.current.style.top=`${textAnimationValue}%`
     animatedTextGradient.current.style.fontSize=`${textSize}px`
   }, [verticalScroll]);
-  console.log(gradientAnimationValue);
-  console.log(textAnimationValue)
-  console.log(textSize)
+
 
   return (
     <div className="gradient-animated-container" ref={animatedGradient}>

@@ -6,6 +6,7 @@
     background-position: 70% 70%;
     background-size: cover;
     background-attachment: fixed;
+    overflow: hidden;
 
 }
 
@@ -39,7 +40,6 @@ align-items: flex-start;
 
 
   .animated-hero-text{
-    opacity: 0%;
     overflow: hidden;
     position: relative;
     font-size: 20vh;
@@ -47,13 +47,14 @@ align-items: flex-start;
     font-size: 25vh;
     color: azure;
     z-index: 0;
-    top:0%;
-    right:10%;
+    right:0%;
     height: min-content;
     text-align: center;
     margin-bottom: 40px;
-    transition:  2s ease-in-out; 
-    transform: translate(-50%, -50%); 
+    transition: opacity 0.3s ease-in-out; 
+    top:10%;
+    position: fixed;
+
  
  
   }
@@ -62,14 +63,24 @@ align-items: flex-start;
     height: min-content;
   position: relative;
   font-size: 10vh;
-    opacity: 0%;
     width: 100%;
     transform: translate(10%, 20%); 
-
+    transition: opacity 0.3s ease-in-out; 
     color: azure;
     z-index: 0;
   
     left: 0%;
     margin-top: 560px;
+    position: fixed;
 
+   }
+
+   .hero-firstText{
+    font-size: 10vh;
+    color: azure;
+    position: relative;
+    position: fixed;
+    transition: opacity 0.3s ease-in-out; 
+    top:15%;
+    left: 85%;
    }

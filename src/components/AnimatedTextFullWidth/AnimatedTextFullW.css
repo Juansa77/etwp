@@ -1,0 +1,51 @@
+.animated-text-fullW-container {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background-color: black;
+  z-index: 1;
+  color: azure;
+  justify-items: center;
+  position:absolute;
+}
+
+.animated-text-first {
+
+  position: relative;
+  padding: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transform: translateX(
+    -100%
+  ); /* Inicialmente fuera de la pantalla a la izquierda */
+  transition: transform 2.5s ease;
+}
+
+.animated-text-first > h1 {
+  font-size: 12vh;
+  z-index: 1;
+  position: relative;
+  top:5%
+
+}
+.animated-text-first > p {
+  font-size: 3vh;
+  text-align: center;
+color:rgb(180, 152, 58);
+}
+
+
+.sevilla-image{
+  position: relative;
+    height: 70vh;
+
+    left: 50%;
+    bottom: 55%;
+    z-index: 0;
+    transition: transform 4.5s ease-in-out;
+    transition: ease-in-out;
+}

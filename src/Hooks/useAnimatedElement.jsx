@@ -19,7 +19,7 @@ const useAnimatedElement = (
   increment = 1,
   element, // elemento REF
   direction, // LEFT, RIGHT, DOWN OR UP
-  repeat = "repeat" // valores: repeat, no reRepeat
+  repeat = "noRepeat" // valores: repeat, no reRepeat
 ) => {
   const [number, setNumber] = useState(initialValue);
   const increasing = true;

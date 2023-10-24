@@ -3,9 +3,9 @@ import AnimatedText from "../../components/AnimatedText/AnimatedText";
 import AnimatedPic from "../../components/AnimatedPic/AnimatedPic";
 import DivSeparator from "../../components/DivSeparator/DivSeparator";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import AnimationLinear from "../../components/AnimationLinear/AnimationLinear";
 import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack";
 import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
+import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
 
 
 
@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <DivSeparator>
-        <AnimationLinear />
+<AnimatedTextFullW direction={"up"}/>
       </DivSeparator>
     
       <DivSeparator>
