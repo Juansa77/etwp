@@ -13,10 +13,10 @@ const HeroSection = () => {
   const frontalAnimation = useAnimationBounce();
 
   //*----UseEffect PARA LA ANIMACIÓN FRONTAL
-  useEffect(() => {
+ /* useEffect(() => {
     frontalImage.current.style.left = `${frontalAnimation}%`;
     // Aplica la animación cuando el elemento es visible
-  }, [frontalAnimation]);
+  }, [frontalAnimation]);*/
 
   //*----UseEffect PARA LA ANIMACIÓN DE  OPACITY DE  TEXTO POR SCROLL-----
   useEffect(() => {

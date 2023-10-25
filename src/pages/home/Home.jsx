@@ -6,6 +6,7 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack";
 import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
 import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
+import WavesDiv from "../../components/WavesDiv/WavesDiv";
 
 
 
@@ -26,6 +27,9 @@ const Home = () => {
       </DivSeparator>
       <DivSeparator>
         <GradientDivAnimated/>
+      </DivSeparator>
+      <DivSeparator>
+<WavesDiv/>
       </DivSeparator>
       <DivSeparator>
         <AnimatedText direction={"up"} />

@@ -1,86 +1,102 @@
-.heroContainer{
-
-    width: 100%;
-    min-height: 120vh;
-    background-image: url("fondo elena wp.jpg");
-    background-position: 70% 70%;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-
+.heroContainer {
+  width: 100%;
+  min-height: 120vh;
+  background-image: url("fondo elena wp.jpg");
+  background-position: 70% 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
-.frontalHero{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-
+.frontalHero {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
 
 .frontalImage {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-    object-fit: cover;
-    z-index: 1;
-    position: absolute;
-    font-size: 25vh;
-    top: 50%; /* Alinea verticalmente el texto en el centro */
-    left: 50%; /* Alinea horizontalmente el texto en el centro */
-    transform: translate(-50%, -50%); /* Centra el texto */
-    color: white; /* Color del texto */
-    padding: 10px;
-    z-index: 1;
-    transition:  2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
-  }
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  object-fit: cover;
+  z-index: 1;
+  position: absolute;
+  font-size: 25vh;
+  top: 50%; /* Alinea verticalmente el texto en el centro */
+  left: 50%; /* Alinea horizontalmente el texto en el centro */
+  transform: translate(-50%, -50%); /* Centra el texto */
+  color: white; /* Color del texto */
+  padding: 10px;
+  z-index: 1;
+  transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
+}
 
+.animated-hero-text {
+  overflow: hidden;
+  position: relative;
+  font-size: 20vh;
+  width: 100%;
+  font-size: 25vh;
+  color: azure;
+  z-index: 0;
+  right: 0%;
+  height: min-content;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: opacity 0.1s linear;
+  top: 10%;
+  position: fixed;
+}
 
-  .animated-hero-text{
-    overflow: hidden;
-    position: relative;
-    font-size: 20vh;
-    width: 100%;
-    font-size: 25vh;
-    color: azure;
-    z-index: 0;
-    right:0%;
-    height: min-content;
-    text-align: center;
-    margin-bottom: 40px;
-    transition: opacity 0.3s ease-in-out; 
-    top:10%;
-    position: fixed;
-
- 
- 
-  }
-
-  .hero-subtext{
-    height: min-content;
+.hero-subtext {
+  height: min-content;
   position: relative;
   font-size: 10vh;
+  width: 100%;
+  transform: translate(10%, 20%);
+  transition: opacity 0.1s linear;
+  color: azure;
+  z-index: 0;
+
+  left: 0%;
+  margin-top: 560px;
+  position: fixed;
+}
+
+.hero-firstText {
+  font-size: 10vh;
+  color: azure;
+  position: relative;
+  position: fixed;
+  transition: opacity 0.1s linear;
+  top: 15%;
+  left: 85%;
+}
+
+@keyframes frontImageAnimation {
+  0% {
+    margin-left: 10%;
     width: 100%;
-    transform: translate(10%, 20%); 
-    transition: opacity 0.3s ease-in-out; 
-    color: azure;
-    z-index: 0;
-  
-    left: 0%;
-    margin-top: 560px;
-    position: fixed;
+  }
 
-   }
+  40% {
+    margin-left: 4%;
+    width: 100%;
+  }
+  70% {
+    margin-left: 7%;
+    width: 100%;
+  }
 
-   .hero-firstText{
-    font-size: 10vh;
-    color: azure;
-    position: relative;
-    position: fixed;
-    transition: opacity 0.3s ease-in-out; 
-    top:15%;
-    left: 85%;
-   }
+  100% {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
+
+.frontalImage {
+  animation: frontImageAnimation 7s infinite linear;
+}
