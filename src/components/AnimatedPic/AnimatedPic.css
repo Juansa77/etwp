@@ -3,22 +3,30 @@
     width: 50vw;
 
     display: flex;
-    overflow: hidden; 
+
+    
  
 }
 
 .animated-pic{
-    padding: 4vh;
+    padding: 2vh;
 
   transform: translateX(-100%); /* Inicialmente fuera de la pantalla a la izquierda */
   transition: transform 2.5s ease;
-  border: 1px solid rgb(228, 228, 214);
+
   display: flex;
   width: 100%;
   justify-content: center;
+ 
  
 }
 
 .picAnimated{
   border: 1px solid rgb(219, 214, 214);
+  border: 20px solid beige;
+  -webkit-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+-moz-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+transform: rotate(9deg);
+z-index: 1;
 }

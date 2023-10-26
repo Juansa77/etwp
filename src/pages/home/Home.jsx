@@ -8,16 +8,14 @@ import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDi
 import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
 import WavesDiv from "../../components/WavesDiv/WavesDiv";
 
-
-
 const Home = () => {
   return (
     <div className="home">
       <HeroSection />
       <DivSeparator>
-<AnimatedTextFullW direction={"up"}/>
+        <AnimatedTextFullW direction={"up"} />
       </DivSeparator>
-    
+
       <DivSeparator>
         <AnimatedText direction={"left"} />
         <AnimatedText direction={"right"} />
@@ -26,19 +24,18 @@ const Home = () => {
         <AnimatedTextBack />
       </DivSeparator>
       <DivSeparator>
-        <GradientDivAnimated/>
+        <GradientDivAnimated />
       </DivSeparator>
       <DivSeparator>
-<WavesDiv/>
-      </DivSeparator>
-      <DivSeparator>
-        <AnimatedText direction={"up"} />
-        <AnimatedPic direction={"right"} pic={"elena1.jpg"} form={"circle"} />
+        <WavesDiv />
       </DivSeparator>
       <DivSeparator>
         <AnimatedText direction={"up"} />
+        <AnimatedPic direction={"right"} pic={"elena1.jpg"}  />
       </DivSeparator>
- 
+      <DivSeparator>
+        <AnimatedText direction={"up"} />
+      </DivSeparator>
     </div>
   );
 };

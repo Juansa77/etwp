@@ -1,4 +1,4 @@
-import useAnimationBounce from "../../Hooks/useAnimationBounce";
+
 import useVerticalScrollPosition from "../../Hooks/useVerticalScrollPosition";
 import "./HeroSection.css";
 import { useState, useEffect, useRef } from "react";
@@ -10,7 +10,7 @@ const HeroSection = () => {
   const animatedFirstRef = useRef();
   const [currentOpacity, setCurrentOpacity] = useState(100);
   const scrollTotal = useVerticalScrollPosition();
-  const frontalAnimation = useAnimationBounce();
+ 
 
   //*----UseEffect PARA LA ANIMACIÓN FRONTAL
  /* useEffect(() => {

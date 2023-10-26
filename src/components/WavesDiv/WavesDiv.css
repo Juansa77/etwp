@@ -1,9 +1,15 @@
 .waves-container {
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
   position: relative;
   overflow: hidden;
   background-color: rgb(159, 228, 228);
+  transform: rotate(-3deg);
+  border: 20px solid beige;
+  -webkit-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+-moz-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+box-shadow: 7.5px 8.5px 10px 3px #dddddd;
+ 
 }
 
 .wave1 {
@@ -17,11 +23,11 @@
   backdrop-filter: blur(10px);
 
   clip-path: polygon(
-    55.7% 9%,
+    75.7% 9%,
     72.7% 42%,
     100% 15%,
     100% 100%,
-    85% 100%,
+    105% 100%,
     15% 100%,
     0% 100%,
     0.2% 37.8%
@@ -106,11 +112,10 @@
   0% {
     height: 25vh;
     width: 14vw;
-    
   }
 
   50% {
-    height:  26vh;
+    height: 26vh;
     width: 15vw;
   }
 
@@ -118,4 +123,12 @@
     height: 25vh;
     width: 14vw;
   }
+}
+
+.wavesText {
+  color: azure;
+  font-size: 10vh;
+  position: absolute;
+  right: 5%;
+  top: 15%;
 }
