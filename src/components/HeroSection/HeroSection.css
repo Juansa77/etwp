@@ -5,7 +5,6 @@
   background-position: 70% 70%;
   background-size: cover;
   background-attachment: fixed;
-  overflow: hidden;
 }
 
 .frontalHero {
@@ -18,19 +17,18 @@
 }
 
 .frontalImage {
+  overflow: visible;
   width: 100%;
   height: 100%;
-  overflow-y: hidden;
-  object-fit: cover;
-  z-index: 1;
+ object-fit: cover;
   position: absolute;
   font-size: 25vh;
   top: 50%; /* Alinea verticalmente el texto en el centro */
   left: 50%; /* Alinea horizontalmente el texto en el centro */
   transform: translate(-50%, -50%); /* Centra el texto */
-  color: white; /* Color del texto */
+  color: var(--light-green-color);
   padding: 10px;
-  z-index: 1;
+  z-index: 4;
   transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
 }
 
@@ -40,7 +38,7 @@
   font-size: 20vh;
   width: 100%;
   font-size: 25vh;
-  color: azure;
+  color: var(--light-green-color);
   z-index: 0;
   right: 0%;
   height: min-content;
@@ -58,17 +56,16 @@
   width: 100%;
   transform: translate(10%, 20%);
   transition: opacity 0.1s linear;
-  color: azure;
+  color: var(--orange-color);
   z-index: 0;
-
-  left: 0%;
+ left: 0%;
   margin-top: 560px;
   position: fixed;
 }
 
 .hero-firstText {
   font-size: 10vh;
-  color: azure;
+  color: var(--orange-color);
   position: relative;
   position: fixed;
   transition: opacity 0.1s linear;

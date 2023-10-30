@@ -4,9 +4,9 @@
   display: flex;
   overflow: hidden;
   justify-content: center;
-  background-color: black;
+  background-color: var(--dark-color);
   z-index: 1;
-  color: azure;
+  color:var(--light-green-color);
   justify-items: center;
   position:absolute;
 }
@@ -35,7 +35,7 @@
 .animated-text-first > p {
   font-size: 3vh;
   text-align: center;
-color:rgb(180, 152, 58);
+color:var(--orange-color);
 }
 
 
@@ -44,7 +44,7 @@ color:rgb(180, 152, 58);
     height: 70vh;
 
     left: 50%;
-    bottom: 55%;
+    bottom: 50%;
     z-index: 0;
     transition: transform 4.5s ease-in-out;
     transition: ease-in-out;

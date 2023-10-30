@@ -1,5 +1,10 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   min-height: 100vh;
+  --dark-color: #0f324c;
+--blue-color: #205c94;
+--orange-color: #c16c47;
+--yellow-color: #d4bf6b;
+ --light-green-color: #e5e5b6;
 }
 

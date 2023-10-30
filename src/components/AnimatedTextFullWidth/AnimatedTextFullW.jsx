@@ -6,7 +6,7 @@ import useIsVisible from "../../Hooks/useIsVisible";
 const AnimatedTextFullW = ({ direction }) => {
   const animatedTextRef = useRef(null);
   const animatedImage = useRef();
-  useAnimatedElement(1, 30, 40, 1, animatedImage, "left", "noRepeat");
+  //useAnimatedElement(1, 30, 40, 1, animatedImage, "left", "noRepeat");
   const isVisible = useIsVisible(animatedTextRef);
 
   //*----UseEffect para aplicar la clase en caso de que sea visible
