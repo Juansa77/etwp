@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import "./AnimatedTextFullW.css";
-import useAnimatedElement from "../../Hooks/useAnimatedElement";
 import useIsVisible from "../../Hooks/useIsVisible";
 
 const AnimatedTextFullW = ({ direction }) => {

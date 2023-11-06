@@ -1,9 +1,9 @@
 .div-separator {
-  max-height: min-content;
-  min-height: min-content;
-
+  max-height: 100vh;
+  min-height: 100vh;
+background-color: beige;
   width: 100vw;
   display: flex;
-  border: 2px solid rgb(180, 152, 58);
   justify-content: center;
+
 }

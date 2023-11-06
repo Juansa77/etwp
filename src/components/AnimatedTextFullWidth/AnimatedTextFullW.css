@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .animated-text-fullW-container {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   overflow: hidden;
   justify-content: center;
-  background-color: var(--dark-color);
+  background-color: black;
   z-index: 1;
-  color:var(--light-green-color);
+  color: beige;
   justify-items: center;
-  position:absolute;
+  position: absolute;
 }
 
 .animated-text-first {
-
   position: relative;
   padding: 4vh;
   display: flex;
@@ -27,25 +28,24 @@
 
 .animated-text-first > h1 {
   font-size: 12vh;
+  border-bottom: 1px solid beige;
   z-index: 1;
   position: relative;
-  top:5%
-
+  top: 5%;
+  font-family: 'Dancing Script', cursive
 }
 .animated-text-first > p {
   font-size: 3vh;
   text-align: center;
-color:var(--orange-color);
+  color: var(--orange-color);
 }
 
-
-.sevilla-image{
+.sevilla-image {
   position: relative;
-    height: 70vh;
-
-    left: 50%;
-    bottom: 50%;
-    z-index: 0;
-    transition: transform 4.5s ease-in-out;
-    transition: ease-in-out;
+  height: 70vh;
+  left: 60%;
+  bottom: 10%;
+  z-index: 0;
+  transition: transform 4.5s ease-in-out;
+  transition: ease-in-out;
 }

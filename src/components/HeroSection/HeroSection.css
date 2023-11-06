@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
 .heroContainer {
   width: 100%;
-  min-height: 120vh;
+  min-height: 200vh;
   background-image: url("fondo elena wp.jpg");
   background-position: 70% 70%;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .frontalHero {
@@ -26,7 +30,7 @@
   top: 50%; /* Alinea verticalmente el texto en el centro */
   left: 50%; /* Alinea horizontalmente el texto en el centro */
   transform: translate(-50%, -50%); /* Centra el texto */
-  color: var(--light-green-color);
+  color: beige;
   padding: 10px;
   z-index: 4;
   transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
@@ -38,7 +42,7 @@
   font-size: 20vh;
   width: 100%;
   font-size: 25vh;
-  color: var(--light-green-color);
+  color: beige;
   z-index: 0;
   right: 0%;
   height: min-content;
@@ -47,30 +51,36 @@
   transition: opacity 0.1s linear;
   top: 10%;
   position: fixed;
+  
 }
 
 .hero-subtext {
   height: min-content;
   position: relative;
-  font-size: 10vh;
+  font-size: 15vh;
   width: 100%;
   transform: translate(10%, 20%);
   transition: opacity 0.1s linear;
-  color: var(--orange-color);
+  color: beige;
   z-index: 0;
  left: 0%;
   margin-top: 560px;
   position: fixed;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 2px 4px #421010;
 }
 
 .hero-firstText {
-  font-size: 10vh;
-  color: var(--orange-color);
+  font-size: 12vh;
+  font-family: 'Dancing Script', cursive;
+color:beige;
   position: relative;
   position: fixed;
   transition: opacity 0.1s linear;
   top: 15%;
   left: 85%;
+  text-shadow: 2px 4px #421010;
+  z-index: 1;
 }
 
 @keyframes frontImageAnimation {

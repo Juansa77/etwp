@@ -15,19 +15,12 @@ const Home = () => {
       <DivSeparator>
         <AnimatedTextFullW direction={"up"} />
       </DivSeparator>
-
-      <DivSeparator>
-        <AnimatedText direction={"left"} />
-        <AnimatedText direction={"right"} />
-      </DivSeparator>
       <DivSeparator>
         <AnimatedTextBack />
       </DivSeparator>
       <DivSeparator>
-        <GradientDivAnimated />
-      </DivSeparator>
-      <DivSeparator>
-        <WavesDiv />
+        <AnimatedText direction={"left"} />
+        <AnimatedText direction={"right"} />
       </DivSeparator>
       <DivSeparator>
         <AnimatedText direction={"up"} />
@@ -35,6 +28,12 @@ const Home = () => {
       </DivSeparator>
       <DivSeparator>
         <AnimatedText direction={"up"} />
+      </DivSeparator>
+      <DivSeparator>
+        <WavesDiv />
+      </DivSeparator>
+      <DivSeparator>
+        <GradientDivAnimated />
       </DivSeparator>
     </div>
   );

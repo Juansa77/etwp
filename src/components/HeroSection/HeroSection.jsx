@@ -21,7 +21,7 @@ const HeroSection = () => {
   //*----UseEffect PARA LA ANIMACIÓN DE  OPACITY DE  TEXTO POR SCROLL-----
   useEffect(() => {
     const opacityValue = 100;
-    setCurrentOpacity(opacityValue - scrollTotal / 13);
+    setCurrentOpacity(opacityValue - scrollTotal /27);
 
     animatedText.current.style.opacity = `${currentOpacity}%`;
     animatedSubText.current.style.opacity = `${currentOpacity}%`;

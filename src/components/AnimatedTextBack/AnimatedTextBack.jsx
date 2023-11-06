@@ -28,6 +28,9 @@ textAnimatedBack.current.style.left=`${animationValue}%`
         velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
       </h1>
       <h1 className="mainText">Soy escritora</h1>
     </div>

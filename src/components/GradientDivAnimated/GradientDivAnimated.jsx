@@ -14,7 +14,7 @@ const GradientDivAnimated = () => {
     setGradientAnimationValue(verticalScroll/5);
     setTextAnimationValue((verticalScroll/90)*0.5+15)
     setTextSize((verticalScroll/100)+100)
-    animatedGradient.current.style.backgroundImage = `linear-gradient(${gradientAnimationValue}deg, green, beige   )`;
+    animatedGradient.current.style.backgroundImage = `linear-gradient(${gradientAnimationValue}deg, black, beige   )`;
     animatedTextGradient.current.style.top=`${textAnimationValue}%`
     animatedTextGradient.current.style.fontSize=`${textSize}px`
   }, [verticalScroll]);

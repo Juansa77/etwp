@@ -6,7 +6,7 @@ const WavesDiv = () => {
   const sunRef = useRef();
   const isVisible = useIsVisible(sunRef);
   const containerRef = useRef();
-  const wavesTextRef= useRef()
+  const wavesTextRef = useRef();
 
   //*----UseEffect para aplicar la clase en caso de que sea visible
   useEffect(() => {
@@ -28,11 +28,15 @@ const WavesDiv = () => {
   }, [isVisible]);
 
   return (
-    <div className="waves-container" ref={containerRef}>
-    <div className="sunDiv" ref={sunRef}></div>
-      <h1 className="wavesText" ref={wavesTextRef}>Me encanta el mar</h1>
-      <div className="wave1"></div>
-      <div className="wave2"></div>
+    <div className="waves-card-container">
+      <div className="waves-container" ref={containerRef}>
+        <div className="sunDiv" ref={sunRef}></div>
+        <h1 className="wavesText" ref={wavesTextRef}>
+          Me encanta el mar
+        </h1>
+        <div className="wave1"></div>
+        <div className="wave2"></div>
+      </div>
     </div>
   );
 };
