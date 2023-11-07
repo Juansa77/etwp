@@ -7,6 +7,9 @@ import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack
 import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
 import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
 import WavesDiv from "../../components/WavesDiv/WavesDiv";
+import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
+
+
 
 const Home = () => {
   return (
@@ -21,6 +24,9 @@ const Home = () => {
       <DivSeparator>
         <AnimatedText direction={"left"} />
         <AnimatedText direction={"right"} />
+      </DivSeparator>
+      <DivSeparator>
+      <AnimatedGallery direction={"right"} pic={"elena1.jpg"}  />
       </DivSeparator>
       <DivSeparator>
         <AnimatedText direction={"up"} />

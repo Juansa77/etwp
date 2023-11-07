@@ -20,8 +20,8 @@
 }
 
 .picAnimated {
-  border: 1px solid rgb(219, 214, 214);
-  border: 20px solid beige;
+  border: 1px solid rgb(241, 235, 235);
+  border: 20px solid rgb(240, 240, 233);
   -webkit-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
   -moz-box-shadow: 7.5px 8.5px 10px 3px #dddddd;
   box-shadow: 7.5px 8.5px 10px 3px #dddddd;
