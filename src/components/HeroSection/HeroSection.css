@@ -4,7 +4,7 @@
 .heroContainer {
   width: 100%;
   min-height: 200vh;
-  background-image: url("fondo elena wp.jpg");
+  background-image: url("fondoElena.jpg");
   background-position: 70% 70%;
   background-size: cover;
   background-attachment: fixed;
@@ -39,17 +39,16 @@
 .animated-hero-text {
   overflow: hidden;
   position: relative;
-  font-size: 20vh;
   width: 100%;
-  font-size: 25vh;
+  font-size: 17rem;
+  line-height: 17rem;
   color: beige;
   z-index: 0;
   right: 0%;
   height: min-content;
   text-align: center;
-  margin-bottom: 40px;
   transition: opacity 0.1s linear;
-  top: 10%;
+  top: 20%;
   position: fixed;
   
 }
@@ -57,28 +56,27 @@
 .hero-subtext {
   height: min-content;
   position: relative;
-  font-size: 15vh;
-  width: 100%;
-  transform: translate(10%, 20%);
+  font-size: 7rem;
+  width: min-content;
+  top:50%;
+  left: 10%;
   transition: opacity 0.1s linear;
   color: beige;
   z-index: 0;
- left: 0%;
-  margin-top: 560px;
   position: fixed;
   font-family: 'Dancing Script', cursive;
   text-shadow: 2px 4px #421010;
 }
 
 .hero-firstText {
-  font-size: 12vh;
+  font-size: 7rem;
   font-family: 'Dancing Script', cursive;
 color:beige;
   position: relative;
   position: fixed;
   transition: opacity 0.1s linear;
-  top: 15%;
-  left: 85%;
+  top: 25%;
+  left: 75%;
   text-shadow: 2px 4px #421010;
   z-index: 1;
 }
@@ -106,4 +104,23 @@ color:beige;
 
 .frontalImage {
   animation: frontImageAnimation 7s infinite linear;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .animated-hero-text{
+    font-size: 10rem;
+    line-height: 10rem;
+  }
+
+  .hero-firstText{
+    left: 50%;
+    top:12%;
+  }
+
+  .hero-subtext{
+    left:  20%;
+    font-size: 8rem;
+  }
 }

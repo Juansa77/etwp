@@ -1,15 +1,17 @@
 import "./Home.css";
-import AnimatedText from "../../components/AnimatedText/AnimatedText";
-import AnimatedPic from "../../components/AnimatedPic/AnimatedPic";
-import DivSeparator from "../../components/DivSeparator/DivSeparator";
+// import AnimatedText from "../../components/AnimatedText/AnimatedText";
+// import AnimatedPic from "../../components/AnimatedPic/AnimatedPic";
+// import DivSeparator from "../../components/DivSeparator/DivSeparator";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack";
-import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
-import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
-import WavesDiv from "../../components/WavesDiv/WavesDiv";
-import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
+// import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack";
+// import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
+// import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
+// import WavesDiv from "../../components/WavesDiv/WavesDiv";
+// import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
 import BioComponent from "../../components/bioComponent/BioComponent";
 import AboutHeaderComponent from "../../components/aboutHeaderComponent/AboutHeaderComponent";
+import BooksComponent from "../../components/BooksComponent/BooksComponent";
+
 
 
 
@@ -19,7 +21,9 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <BioComponent/>
-      <AboutHeaderComponent/>
+      <AboutHeaderComponent text="Mis libros" image="fondoElena.jpg"/>
+      <BooksComponent/>
+      
       
       {/* <DivSeparator>
         <AnimatedTextFullW direction={"up"} />

@@ -4,7 +4,7 @@
     min-height: 90vh;
     margin-top: -10vh;
     width: 100%;
-    background-image: url("fondo elena wp.jpg");
+    /*background-image: url("fondo elena wp.jpg");*/
     background-position: 70% 70%;
     background-size: cover;
     background-attachment: fixed;
@@ -40,4 +40,10 @@
 
   .opacityFast {
     animation: opacityAnimationFast 3s linear;
+  }
+
+  @media screen and (max-width: 768px){
+    .about-header-text{
+      font-size: 10rem;
+    }
   }
