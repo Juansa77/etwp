@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.about-header-container{
+    min-height: 90vh;
+    margin-top: -10vh;
+    width: 100%;
+    background-image: url("fondo elena wp.jpg");
+    background-position: 70% 70%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 84.8%);
+}
+
+.about-header-text{
+    font-size: 20vh;
+    font-family: 'Dancing Script', cursive;
+  color:beige;
+  text-shadow: 2px 4px #421010;
+    z-index: 1;
+}
+
+@keyframes opacityAnimationFast {
+    0% {
+      opacity: 0%;
+    }
+    40% {
+      opacity: 40%;
+    }
+    60% {
+      opacity: 60%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  .opacityFast {
+    animation: opacityAnimationFast 3s linear;
+  }

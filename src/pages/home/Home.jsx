@@ -8,6 +8,9 @@ import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDi
 import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
 import WavesDiv from "../../components/WavesDiv/WavesDiv";
 import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
+import BioComponent from "../../components/bioComponent/BioComponent";
+import AboutHeaderComponent from "../../components/aboutHeaderComponent/AboutHeaderComponent";
+
 
 
 
@@ -15,7 +18,10 @@ const Home = () => {
   return (
     <div className="home">
       <HeroSection />
-      <DivSeparator>
+      <BioComponent/>
+      <AboutHeaderComponent/>
+      
+      {/* <DivSeparator>
         <AnimatedTextFullW direction={"up"} />
       </DivSeparator>
       <DivSeparator>
@@ -40,7 +46,7 @@ const Home = () => {
       </DivSeparator>
       <DivSeparator>
         <GradientDivAnimated />
-      </DivSeparator>
+      </DivSeparator> */}
     </div>
   );
 };

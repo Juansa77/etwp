@@ -32,7 +32,7 @@
   transform: translate(-50%, -50%); /* Centra el texto */
   color: beige;
   padding: 10px;
-  z-index: 4;
+  z-index: 3;
   transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
 }
 
