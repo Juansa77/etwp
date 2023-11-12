@@ -1,10 +1,24 @@
-import "./BooksComponent.css"
-import React from 'react'
+import "./BooksComponent.css";
+import jsonData from "../../data/booksData.json";
+import CardComponent from "../CardComponent/CardComponent";
+CardComponent;
 
 const BooksComponent = () => {
-  return (
-    <div className="books-component-container">BooksComponent</div>
-  )
-}
+  const data = jsonData;
 
-export default BooksComponent
+  return (
+    <div className="books-component-container">
+      {data.map((book, index) => (
+        <CardComponent
+          key={index}
+          title={book.title}
+          image={book.image}
+          buy={book.link}
+          goodReads={book.goodReadsLink}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default BooksComponent;

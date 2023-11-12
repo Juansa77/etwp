@@ -1,5 +1,15 @@
-.books-component-container{
-    min-height: 70vh;
-    width: 100%;
-    display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+.books-component-container {
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  min-height: 120vh;
+  width: 100vw;
+  background-color: white;
+  z-index: 10;
+  clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 84.8%);
 }
+

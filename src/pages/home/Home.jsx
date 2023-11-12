@@ -21,7 +21,7 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <BioComponent/>
-      <AboutHeaderComponent text="Mis libros" image="fondoElena.jpg"/>
+      <AboutHeaderComponent text="Mis libros" image="elena3.jpg"/>
       <BooksComponent/>
       
       

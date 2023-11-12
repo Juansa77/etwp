@@ -1,0 +1,51 @@
+.card-container {
+  max-height: 90vh;
+  min-height: 90vh;
+  margin: 1vw;
+  width: 24vw;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.card-container:hover{
+  .card-links-container{
+    margin-top: 0;
+  }
+}
+
+.bookCover{
+  height: 60vh;
+  max-width: 100%;
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 3px 3px 10px 3px #afaaaa;
+  border-radius: 3px;
+}
+
+.card-links-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 24vw;
+  border: 1px solid red;
+  text-align: center;
+  margin-top: -20vh;
+ 
+}
+
+.buy-link, .goodReads-link{
+  border-radius: 2px;
+  margin: 1vh;
+  width: 70%;
+  background-color: bisque;
+  z-index: 0;
+  
+}
+
