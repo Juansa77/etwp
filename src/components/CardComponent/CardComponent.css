@@ -1,32 +1,44 @@
 .card-container {
   max-height: 90vh;
   min-height: 90vh;
-  margin: 1vw;
-  width: 24vw;
+  width: 25vw;
   align-items: center;
-  justify-content: center;
-  justify-items: center;
+  justify-content: left;
+  justify-items: flex-start;
   display: flex;
   flex-direction: column;
-  z-index: 5;
+  z-index: 20;
+  position: relative;
+  margin: 1vh;
+  
 }
 
-.card-container:hover{
-  .card-links-container{
-    margin-top: 0;
+.card-container:hover {
+  cursor: pointer;
+
+  .bookCover {
+    transform: scale(1.03);
+    transition: transform 0.5s ease;
+  }
+
+  .card-links-container {
+    top: 70%;
+    transition: top 0.5s ease, opacity 2.5s ease;
+    opacity: 100%;
   }
 }
 
-.bookCover{
+.bookCover {
   height: 60vh;
   max-width: 100%;
   -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
   -moz-box-shadow: 3px 3px 10px 3px #dddddd;
   box-shadow: 3px 3px 10px 3px #afaaaa;
-  border-radius: 3px;
+  border-radius: 7px;
+  transition: transform 0.5s ease;
 }
 
-.card-links-container{
+.card-links-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,18 +46,66 @@
   align-content: center;
   align-items: center;
   width: 24vw;
-  border: 1px solid red;
   text-align: center;
-  margin-top: -20vh;
- 
+  position: absolute;
+  top: 80%;
+  opacity: 0%;
+  transition: top 1.5s ease, opacity 2.5s ease;
 }
 
-.buy-link, .goodReads-link{
-  border-radius: 2px;
-  margin: 1vh;
-  width: 70%;
-  background-color: bisque;
-  z-index: 0;
-  
+.buy-link,
+.goodReads-link {
+  border-radius: 10px;
+  margin: 0.5vh;
+  width: 40%;
+  max-height: 4.5vh;
+  text-align: center;
+  line-height: 4.5vh;
+  background-color: black;
+  z-index: 10;
+  color: beige;
+  font-size: 1.1rem;
+  height: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.goodReads-link {
+  border: 1px solid black;
+  background-color: white;
+  color: rgb(12, 11, 11);
+}
+
+.buy-link:hover,
+.goodReads-link:hover {
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out;
+  background-color: rgb(214, 205, 205);
+  color: rgb(112, 104, 104);
+  border: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin: 1vh; /* Agregar margen en lugar de padding */
+    min-height: 72vh;
+    max-height: auto;
+    width: 90%;
+    margin-bottom: 5vh; /* Ajustar el margen inferior */
+  }
+
+  .card-container:hover{
+    .card-links-container{
+      top:90%;
+    }
+  }
+
+  .buy-link,
+  .goodReads-link {
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+
+}

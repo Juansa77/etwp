@@ -8,6 +8,8 @@ import Home from "./pages/home/Home.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import Products from "./pages/products/Products.jsx";
 
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
  
@@ -18,8 +20,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/products" element={<Products />} />
-        </Route>
+        </Route>  
       </Routes>
+      
+      
     </BrowserRouter>
+
   </React.StrictMode>
 );

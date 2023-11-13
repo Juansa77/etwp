@@ -2,14 +2,33 @@ import { useRef } from "react";
 import useIsVisible from "../../Hooks/useIsVisible";
 import "./BioComponent.css";
 
+
 const BioComponent = () => {
   const bioPicRef = useRef();
   const bioTextRef = useRef();
   const isVisible= useIsVisible(bioPicRef)
+  const presentationRef = useRef()
+  const isVisibleText = useIsVisible(presentationRef)
+
+
+
+
 
   return (
     <div className="bio-container">
+    <div className= {`bio-text-presentation-container ${isVisibleText ? "opacitySlow" : ""}`} ref={presentationRef}   >
+      <h3>Esto es como lo que pone al principio en pequeño</h3>
+     
+     <h1>ESTO EN GRANDE en plan MOTIVADOR</h1>
+      <h4>Relatos |  Literatura | Brujeria | Feminismo | Gatos | Comida</h4>
+      <p>Camila was born and raised in a small seaside town surrounded by
+            breathtaking landscapes in the south of Brazil called Araranguá From
+         
+       .</p>
+    </div>
+ 
       <div className="bio-data-container">
+      <div className="bio-data-wrapper">
         <div className="bio-pic-container">
           <img className={`bio-pic ${isVisible ? "opacityFast" : ""}`} src="elena1.jpg" ref={bioPicRef} />
         </div>
@@ -33,6 +52,7 @@ const BioComponent = () => {
             below.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

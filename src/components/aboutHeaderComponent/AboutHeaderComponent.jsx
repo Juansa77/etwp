@@ -10,6 +10,7 @@ const AboutHeaderComponent = ({text, image}) => {
     const isVisible = useIsVisible(aboutTextRef)
   return (
     <div className="about-header-container" style={{backgroundImage:`url(${image})`}}>
+      <div className="overlay"></div>
       <h1 className={`about-header-text ${isVisible? "opacityFast":""}` } ref={aboutTextRef}>{text}</h1>
     </div>
   );

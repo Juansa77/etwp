@@ -11,6 +11,8 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 import BioComponent from "../../components/bioComponent/BioComponent";
 import AboutHeaderComponent from "../../components/aboutHeaderComponent/AboutHeaderComponent";
 import BooksComponent from "../../components/BooksComponent/BooksComponent";
+import Footer from "../../components/footer/Footer";
+
 
 
 
@@ -23,6 +25,7 @@ const Home = () => {
       <BioComponent/>
       <AboutHeaderComponent text="Mis libros" image="elena3.jpg"/>
       <BooksComponent/>
+      <Footer/>
       
       
       {/* <DivSeparator>
