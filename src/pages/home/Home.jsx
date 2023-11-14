@@ -23,7 +23,7 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <BioComponent/>
-      <AboutHeaderComponent text="Mis libros" image="elena3.jpg"/>
+      <AboutHeaderComponent text="Mis libros" image="elena5.jpg"/>
       <BooksComponent/>
       <Footer/>
       

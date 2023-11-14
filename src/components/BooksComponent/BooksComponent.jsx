@@ -8,6 +8,7 @@ const BooksComponent = () => {
 
   return (
     <div className="books-component-container">
+    <div className="overlayBooks"></div>
       {data.map((book, index) => (
         <CardComponent
           key={index}

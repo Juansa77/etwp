@@ -1,23 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap");
 .books-component-container {
-padding: 10vh;
 
-  display: flex;
+  padding: 10vh;
+ display: flex;
   justify-content: center;
-align-content: flex-start;
-  align-items:flex-start;
-  min-height: min-content;
-  max-height: min-content;
-  width: 100vw;
-  background-color: white;
-  z-index: 10;
  
+  min-height: 70vh;
+  max-height:70vh;
+  max-width: 100vw;
+  background-color: black;
+  z-index: 0;
+  position: relative;
+
 }
 
-@media screen and (max-width: 768px){
- .books-component-container{
-flex-direction: column;
-  align-items: center;
- }
+
+.books-component-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("elena4.jpg");
+  filter: grayscale(100%);
+  background-position: 20% 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+
+.overlayBooks {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+
+
+  background: linear-gradient(
+    to bottom,
+    rgba(12, 12, 12, 0.849),
+    rgba(0, 0, 0, 0.925)
+  );
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .books-component-container {
+    flex-direction: column;
+    align-items: center;
+    min-height: 200vh;
+  }
 }

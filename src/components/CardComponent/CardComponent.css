@@ -1,6 +1,6 @@
 .card-container {
-  max-height: 90vh;
-  min-height: 90vh;
+  max-height: 73vh;
+  min-height: 73vh;
   width: 25vw;
   align-items: center;
   justify-content: left;
@@ -10,6 +10,7 @@
   z-index: 20;
   position: relative;
   margin: 1vh;
+
   
 }
 
@@ -29,11 +30,11 @@
 }
 
 .bookCover {
-  height: 60vh;
+  height: 50vh;
   max-width: 100%;
-  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
-  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
-  box-shadow: 3px 3px 10px 3px #afaaaa;
+  -webkit-box-shadow: 3px 3px 10px 2px #5c5959;
+  -moz-box-shadow: 3px 3px 10px 2px #6d6a6a;
+  box-shadow: 3px 3px 10px 2px #555353;
   border-radius: 7px;
   transition: transform 0.5s ease;
 }
