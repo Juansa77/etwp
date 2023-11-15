@@ -1,7 +1,119 @@
 .footer {
-  display: flex;
   width: 100vw;
-  min-height: 90vh;
+  min-height: 70vh;
+  max-height: 70vh;
+  background: #514d4d;
+  background: #453f3f;
+  background: -webkit-linear-gradient(0deg, #453f3f 0%, #000000 100%);
+  background: linear-gradient(0deg, #453f3f 0%, #000000 100%);
+  position: relative;
+  bottom: 0;
+}
 
-  background: linear-gradient(to bottom, rgba(0, 0, 255, 0.5), rgba(0, 128, 255, 0.5))
+/* Contenido principal */
+.footer-contact-wrapper {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+  border: 1px solid rgb(68, 0, 255);
+  height: 50vh;
+}
+
+.textWrap {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-height: 50vh;
+  min-height: min-content;
+  margin: 0;
+  padding: 0;
+}
+
+.textWrap > h1, .textWrap > h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4rem;
+  border: 1px solid yellow;
+  width: 100%; /* Ajuste para el tamaño completo en pantallas pequeñas */
+  height: 7vh;
+  margin: 0;
+}
+
+.footer-contact-wrapper > h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  height: min-content;
+  margin: 0;
+}
+
+.footer-social-wrap {
+  min-height: 5vh;
+  border: 1px solid grey;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  align-content: flex-start;
+}
+
+.footerWrap {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 0;
+  min-height: 10vh;
+  max-height: 10vh;
+  border: 1px solid red;
+}
+
+/* Texto del pie de página */
+.footerText {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #b0b0b0;
+  margin-bottom: 1rem;
+}
+
+/* Enlaces del pie de página */
+.footerAnchor {
+  color: #b0b0b0;
+  transition: color 0.3s ease;
+}
+
+.footerAnchor:hover {
+  color: #33fcff;
+}
+
+.footer-links-wrap {
+  display: flex;
+  width: 100%;
+  max-height: 2vh;
+  min-height: 2vh;
+  justify-content: center;
+  gap: 1rem;
+  align-content: center;
+  align-self: center;
+}
+
+/* Estilos adicionales específicos para los íconos */
+.footerAnchor svg {
+  font-size: 24px;
+}
+
+/* Media Query para ajustar el diseño en pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  .textWrap > h1, .textWrap > h4 {
+    font-size: 2rem; /* Ajuste del tamaño de fuente para pantallas pequeñas */
+    width: 100%; 
+/* Ajuste para el tamaño completo en pantallas pequeñas */
+  }
 }

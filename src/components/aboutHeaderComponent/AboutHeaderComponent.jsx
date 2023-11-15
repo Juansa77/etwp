@@ -6,8 +6,11 @@ import useIsVisible from "../../Hooks/useIsVisible";
 const AboutHeaderComponent = ({ text, image }) => {
   const aboutTextRef = useRef();
   const secondText= useRef()
+  const blockTextRef = useRef()
   const isVisible = useIsVisible(aboutTextRef);
+  const isVisibleTextBlock= useIsVisible(blockTextRef)
   const isVisibleSecondText = useIsVisible(secondText)
+  
   return (
     <div
       className="about-header-container"
@@ -15,10 +18,12 @@ const AboutHeaderComponent = ({ text, image }) => {
     >
       <div className="overlay"></div>
       <div className="about-text-container">
-      <p className={`books-text ${isVisibleSecondText ? "opacityFast" : ""}`} ref={secondText}>
+      <p className={`books-text ${isVisibleSecondText ? "animationText" : ""}`} ref={secondText}>
         Camila was born and raised in a small seaside town surrounded by
         breathtaking landscapes in the south of Brazil called Araranguá From .
       </p>
+      <p className={`books-text-block ${isVisibleTextBlock ? "animationTextRight" : ""}`}  ref={blockTextRef}>  Camila was born and raised in a small seaside town surrounded by
+        breathtaking landscapes in the south of Brazil called Araranguá From .</p>
       </div>
      
       <h1
