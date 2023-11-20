@@ -64,6 +64,7 @@
   width: 50%;
 }
 .bio-text-presentation-container > h4 {
+
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
@@ -79,6 +80,7 @@
   font-size: 5rem;
   font-style: italic;
   font-family: "Montserrat", sans-serif;
+  color:#c4994d;
 }
 
 .bio-data-container {

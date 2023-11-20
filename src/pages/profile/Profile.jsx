@@ -1,9 +1,14 @@
 
+
+import BioCard from "../../components/bioCardComponent/BioCard"
 import "./Profile.css"
+
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <div className="profile-container">
+      <BioCard/>
+    </div>
   )
 }
 

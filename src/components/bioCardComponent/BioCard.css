@@ -1,0 +1,204 @@
+.biocard-container {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  background-color: #c4994d;
+
+
+}
+
+.biocard-wrapper {
+  width: 70%;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(64, 1fr);
+  grid-template-rows: repeat(64, 1fr);
+  overflow: hidden;
+}
+
+.bio-pic-wrapper {
+  grid-column: 12/35;
+  grid-row: 3/40;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.biopic-back {
+  background-color: black;
+  grid-column: 13/36;
+  grid-row: 4/41;
+
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bio-card-pic {
+width: 100%;
+  position: relative;
+  right: 0%;
+
+}
+
+.bio-data-text-container {
+  grid-column: 40/62;
+  grid-row: 20/62;
+  width: 100%;
+  font-size: 2rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bio-text-container {
+    background-color: white;
+  grid-column: 30/55;
+  grid-row: 5/13;
+  width: 100%;
+  z-index: 3;
+  font-size: 2.5rem;
+  opacity: 100%;
+  color: black;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.bio-text-back {
+  width: 100%;
+  background-color:#1f1fa8;
+  grid-column: 31/56;
+  grid-row: 8/14;
+  z-index: 2;
+  position: relative;
+  left: 0%;
+  
+}
+
+@keyframes textBioAnimation {
+  0% {
+    width: 0%;
+    font-size: 0rem;
+  }
+
+  25% {
+    width: 25%;
+    font-size: 0rem;
+  }
+  70% {
+    width: 50%;
+    font-size: 0rem;
+  }
+
+  75% {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  100% {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes backDivToLeft {
+  0% {
+    left: 60%;
+  }
+
+  25% {
+    left: 40%;
+  }
+  70% {
+    left: 20%;
+  }
+
+  70% {
+    left: 10%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes picAnimationRight {
+  0% {
+    right: 60%;
+    opacity: 0%;
+  }
+
+  25% {
+    right: 40%;
+    opacity: 30%;
+  }
+  70% {
+    right: 20%;
+    opacity: 50%;
+  }
+
+  70% {
+    right: 10%;
+    opacity: 70%;
+  }
+
+  100% {
+    right: 0%;
+    opacity: 100%;
+  }
+}
+
+.animationTextToRight {
+  animation: textBioAnimation 0.8s linear;
+}
+
+.animationBackToLeft {
+  animation: backDivToLeft 0.8s linear;
+}
+
+.picAnimation {
+  animation: picAnimationRight 0.8s linear;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .biocard-wrapper{
+        width: 85%;
+    }
+ .bio-text-container{
+    grid-column: 1/63;
+    grid-row: 4/12;
+    color: black;
+    font-size: 1.8rem;
+
+ }
+
+ .bio-text-back{
+    grid-column: 4/65;
+    grid-row: 8/13;
+ }
+
+ .bio-pic-wrapper{
+    grid-column: 3/62;
+    grid-row: 4/36;
+
+ }
+
+ .biopic-back{
+    grid-column: 5/64;
+    grid-row: 5/37;
+ }
+
+ .bio-data-text-container{
+    grid-column: 1/64;
+    grid-row: 37/62;
+    font-size: 1.5rem;
+ }
+  }
+  
