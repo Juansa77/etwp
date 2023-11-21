@@ -13,7 +13,7 @@ const BioCard = () => {
       <div className="biocard-wrapper">
         <div className="bio-pic-wrapper">
           <img  className={`bio-card-pic ${
-            isVisibleTextWrap ? "picAnimation" : ""
+            isVisibleTextWrap ? "" : ""
           }`} src="elena2.jpg"  />
         </div>
         <div className="biopic-back"></div>

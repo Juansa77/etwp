@@ -1,88 +1,84 @@
-.biocard-container {
+.biocardRight-container {
   min-width: 100%;
   max-width: 100%;
-  height: 100vh;
- display: flex;
+  height: 90vh;
+  padding-top: 10vh;
+
+  display: flex;
   justify-content: center;
 
   background-color: #c4994d;
-  background-image: url("background-yellow.webp");
+  background-image: url("background-dark.webp");
   background-size: cover;
       background-attachment: fixed;
-
-
 }
 
-.biocard-wrapper {
-  width: 80%;
+.biocard-wrapper-right {
+  width: 70%;
   height: 100%;
 
   display: grid;
   grid-template-columns: repeat(64, 1fr);
   grid-template-rows: repeat(64, 1fr);
   overflow: hidden;
-
 }
 
-.bio-pic-wrapper {
-  grid-column: 11/31;
-  grid-row: 3/38;
+.biopic-wrapper-right {
+  grid-column: 32/63;
+  grid-row: 3/29;
   width: 100%;
   z-index: 2;
   overflow: hidden;
 }
 
-.biopic-back {
-  background-color: black;
-  grid-column: 12/32;
-  grid-row: 4/39;
-
+.bio-shadow-back {
+  background-color: #c4994d;
+  grid-column: 33/64;
+  grid-row: 4/30;
   width: 100%;
   z-index: 0;
   overflow: hidden;
 }
 
-.bio-card-pic {
-width: 100%;
-  position: relative;
+.biocard-pic-right {
+  width: 100%;
   right: 0%;
-
 }
 
-.bio-data-text-container {
-  grid-column: 35/54;
-  grid-row: 21/62;
+.biodata-text-container-right {
+  grid-column: 10/30;
+  grid-row: 18/60;
   width: 100%;
   font-size: 1.8rem;
-  color: black;
+  color: white;
   font-family: "Montserrat", sans-serif;
 }
 
-.bio-text-container {
-    background-color: white;
-  grid-column: 28/53;
-  grid-row: 5/13;
+.biotext-container-right {
+  background-color: white;
+  grid-column: 10/35;
+  grid-row: 5/12;
   width: 100%;
   z-index: 3;
   font-size: 2.5rem;
   opacity: 100%;
   color: black;
+  text-align: center;
+  line-height: 2.5rem;
 
   font-family: "Montserrat", sans-serif;
 }
 
-.bio-text-back {
+.biotext-back-right {
   width: 100%;
-  background-color:#1f1fa8;
-  grid-column: 29/54;
-  grid-row: 8/14;
+  background-color: #1f1fa8;
+  grid-column: 11/36;
+  grid-row: 6/13;
   z-index: 2;
   position: relative;
-  left: 0%;
-  
 }
 
-@keyframes textBioAnimation {
+@keyframes textBioAnimation-right {
   0% {
     width: 0%;
     font-size: 0rem;
@@ -99,33 +95,34 @@ width: 100%;
 
   75% {
     width: 90%;
-    font-size: 0rem;
+    color: white;
   }
 
   100% {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    color: black;
   }
 }
 
-@keyframes backDivToLeft {
+@keyframes backDivToLeft-right {
   0% {
-    left: 150%;
+    right: 150%;
   }
 
   25% {
-    left: 150%;
+    right: 150%;
   }
   70% {
-    left: 150%;
+    right: 150%;
   }
 
   70% {
-    left: 90%;
+    right: 90%;
   }
 
   100% {
-    left: 0%;
+    right: 0%;
   }
 }
 
@@ -155,53 +152,48 @@ width: 100%;
   }
 }
 
-.animationTextToRight {
-  animation: textBioAnimation 0.8s linear;
+.animationTextToRight-right {
+  animation: textBioAnimation-right 0.8s linear;
 }
 
-.animationBackToLeft {
-  animation: backDivToLeft 1.5s linear;
+.animationBackToLeft-right {
+  animation: backDivToLeft-right 1.5s linear;
 }
 
 .picAnimation {
   animation: picAnimationRight 0.8s linear;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
-    .biocard-wrapper{
-        width: 85%;
-    }
- .bio-text-container{
+  .biocard-wrapper-right {
+    width: 85%;
+    height: 100vh;
+  }
+  .biotext-container-right {
     grid-column: 1/63;
     grid-row: 4/12;
     color: black;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+  }
 
- }
-
- .bio-text-back{
+  .biotext-back-right {
     grid-column: 4/65;
     grid-row: 8/13;
- }
-
- .bio-pic-wrapper{
-    grid-column: 3/62;
-    grid-row: 4/36;
-
- }
-
- .biopic-back{
-    grid-column: 5/64;
-    grid-row: 5/37;
- }
-
- .bio-data-text-container{
-    grid-column: 1/64;
-    grid-row: 37/62;
-    font-size: 1.5rem;
- }
   }
-  
+
+  .biopic-wrapper-right {
+    grid-column: 1/64;
+    grid-row: 12/30;
+  }
+
+  .bio-shadow-back {
+    grid-column: 2/65;
+    grid-row: 13/29;
+  }
+
+  .biodata-text-container-right {
+    grid-column: 1/64;
+    grid-row: 32/62;
+    font-size: 1.5rem;
+  }
+}
