@@ -4,8 +4,8 @@
 .heroContainer {
   min-width: 100vw;
   max-width: 100vw;
-  min-height: 200vh;
-  background-image: url("fondoElena.jpg");
+  min-height: 150vh;
+  background-image: url("canvaYellow.jpg");
   background-position: 70% 70%;
   background-size: cover;
   background-attachment: fixed;

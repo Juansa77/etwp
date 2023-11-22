@@ -1,15 +1,15 @@
 .biocard-container {
   min-width: 100%;
   max-width: 100%;
-  height: 100vh;
- display: flex;
+  height: 80vh;
+  display: flex;
   justify-content: center;
 
   background-color: #c4994d;
-  background-image: url("background-yellow.webp");
-  background-size: cover;
-      background-attachment: fixed;
 
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5vh;
 
 }
 
@@ -25,11 +25,14 @@
 }
 
 .bio-pic-wrapper {
-  grid-column: 11/31;
-  grid-row: 3/38;
-  width: 100%;
+  grid-column: 15/37;
+  grid-row:12/634;
+height: 100%;
+  min-height: 100%;
   z-index: 2;
   overflow: hidden;
+  z-index: 0;
+
 }
 
 .biopic-back {
@@ -43,24 +46,25 @@
 }
 
 .bio-card-pic {
-width: 100%;
+
   position: relative;
   right: 0%;
-
 }
 
 .bio-data-text-container {
-  grid-column: 35/54;
+  grid-column: 33/49;
   grid-row: 21/62;
   width: 100%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: black;
   font-family: "Montserrat", sans-serif;
+  z-index: 1;
+ 
 }
 
 .bio-text-container {
-    background-color: white;
-  grid-column: 28/53;
+  background-color: white;
+  grid-column: 28/48;
   grid-row: 5/13;
   width: 100%;
   z-index: 3;
@@ -73,13 +77,12 @@ width: 100%;
 
 .bio-text-back {
   width: 100%;
-  background-color:#1f1fa8;
-  grid-column: 29/54;
+  background-color: #1f1fa8;
+  grid-column: 29/49;
   grid-row: 8/14;
   z-index: 2;
   position: relative;
   left: 0%;
-  
 }
 
 @keyframes textBioAnimation {
@@ -160,48 +163,47 @@ width: 100%;
 }
 
 .animationBackToLeft {
-  animation: backDivToLeft 1.5s linear;
+  animation: backDivToLeft 1s linear;
 }
 
 .picAnimation {
   animation: picAnimationRight 0.8s linear;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
-    .biocard-wrapper{
-        width: 85%;
-    }
- .bio-text-container{
-    grid-column: 1/63;
+  .biocard-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .bio-text-container {
+    grid-column: 4/58;
     grid-row: 4/12;
     color: black;
     font-size: 1.8rem;
+  }
 
- }
-
- .bio-text-back{
-    grid-column: 4/65;
+  .bio-text-back {
+    grid-column: 5/59;
     grid-row: 8/13;
- }
+  }
 
- .bio-pic-wrapper{
-    grid-column: 3/62;
-    grid-row: 4/36;
+  .bio-pic-wrapper {
+    grid-column: 1/38;
+    grid-row: 22/65;
+    height: 100%;
+  }
 
- }
-
- .biopic-back{
+  .biopic-back {
     grid-column: 5/64;
     grid-row: 5/37;
- }
-
- .bio-data-text-container{
-    grid-column: 1/64;
-    grid-row: 37/62;
-    font-size: 1.5rem;
- }
   }
-  
+
+  .bio-data-text-container {
+    grid-column: 17/60;
+    grid-row: 13/45;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+
+  .bio-card-pic{width: 100%;}
+}

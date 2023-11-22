@@ -2,21 +2,21 @@ import { useRef } from "react";
 import "./BioCard.css";
 import useIsVisible from "../../Hooks/useIsVisible";
 
-const BioCard = () => {
+const BioCard = ({img, text, background}) => {
   const textWrapRef = useRef();
  
   const isVisibleTextWrap = useIsVisible(textWrapRef);
 
 
   return (
-    <div className="biocard-container">
+    <div className="biocard-container" style={  {backgroundImage: `url(${background})`}}>
       <div className="biocard-wrapper">
         <div className="bio-pic-wrapper">
           <img  className={`bio-card-pic ${
             isVisibleTextWrap ? "" : ""
-          }`} src="elena2.jpg"  />
+          }`} src={img}  />
         </div>
-        <div className="biopic-back"></div>
+        {/* <div className="biopic-back"></div> */}
         <div
           className={`bio-text-container ${
             isVisibleTextWrap ? "animationTextToRight" : ""
@@ -24,7 +24,7 @@ const BioCard = () => {
           ref={textWrapRef}
         >
           {" "}
-          <h3>Frase de ejemplo</h3>
+          <h3>{text}</h3>
         </div>
         <div
           className={`bio-text-back ${

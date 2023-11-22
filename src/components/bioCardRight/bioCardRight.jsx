@@ -13,7 +13,7 @@ const BioCardRight = () => {
         <div className="biopic-wrapper-right">
           <img
             className={`biocard-pic-right ${isVisibleTextWrapRight ? "" : ""}`}
-            src="elena5.jpg"
+            src="elenaTR1.png"
           />
         </div>
         <div className="bio-shadow-back"></div>
