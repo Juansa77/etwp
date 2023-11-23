@@ -1,0 +1,133 @@
+.animated-panel-container {
+  width: 20vw;
+  min-height: 10vh;
+  min-height: 10vh;
+  display: grid;
+  grid-template-columns: repeat(62, 1fr);
+  grid-template-rows: repeat(62, 1fr);
+  
+  
+}
+
+@keyframes panel-text-animation {
+  0% {
+    width: 0%;
+    font-size: 0rem;
+  }
+
+  25% {
+    width: 25%;
+    font-size: 0rem;
+  }
+  70% {
+    width: 50%;
+    font-size: 0rem;
+  }
+
+  75% {
+    width: 90%;
+    font-size: 0rem;
+  }
+
+  100% {
+    width: 100%;
+    font-size: 1.8rem;
+  }
+}
+
+@keyframes panel-back-div-animation {
+  0% {
+    left: 250%;
+  }
+
+  25% {
+    left: 250%;
+  }
+  70% {
+    left: 250%;
+  }
+
+  70% {
+    left: 90%;
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+@keyframes panel-textContainer-animation {
+  0% {
+    right: 60%;
+    opacity: 0%;
+  }
+
+  25% {
+    right: 40%;
+    opacity: 30%;
+  }
+  70% {
+    right: 20%;
+    opacity: 50%;
+  }
+
+  70% {
+    right: 10%;
+    opacity: 100%;
+  }
+
+  100% {
+    right: 0%;
+    opacity: 100%;
+  }
+}
+
+.animated-panel-wrapper {
+  grid-column: 1/61;
+  grid-row: 1/59;
+  background-color: white;
+
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.panel-wrapper-animation {
+  animation: panel-textContainer-animation 1s linear;
+}
+
+.panel-backdiv-animation{
+  animation: panel-back-div-animation 1s linear;
+}
+.animated-panel-shadow {
+
+  
+  grid-column: 2/62;
+  grid-row: 4/63;
+  background-color: rgba(3, 3, 155, 0.404);
+
+  position: relative;
+  z-index: 0;
+}
+
+.animated-panel-text {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  grid-row: 2/63;
+  color:rgba(3, 3, 155, 0.836);
+}
+
+
+@media screen and (max-width: 768px) {
+  .animated-panel-container {
+width:64vw;
+    
+  }
+
+.animated-panel-text{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+}

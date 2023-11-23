@@ -8,6 +8,7 @@
   background: linear-gradient(0deg, #453f3f 0%, #000000 100%);
   position: relative;
   bottom: 0;
+  background-image: url("backCanvaBlue.jpg");
 }
 
 /* Contenido principal */

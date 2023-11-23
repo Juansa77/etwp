@@ -63,7 +63,7 @@ height: 100%;
 }
 
 .bio-text-container {
-  background-color: white;
+  /* background-color: white; */
   grid-column: 28/48;
   grid-row: 5/13;
   width: 100%;

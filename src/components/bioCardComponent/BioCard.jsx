@@ -1,6 +1,9 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react";
 import "./BioCard.css";
 import useIsVisible from "../../Hooks/useIsVisible";
+import AnimatedPanel from "../animatedPanel/AnimatedPanel";
+
 
 const BioCard = ({img, text, background}) => {
   const textWrapRef = useRef();
@@ -17,7 +20,7 @@ const BioCard = ({img, text, background}) => {
           }`} src={img}  />
         </div>
         {/* <div className="biopic-back"></div> */}
-        <div
+        {/* <div
           className={`bio-text-container ${
             isVisibleTextWrap ? "animationTextToRight" : ""
           }`}
@@ -31,7 +34,10 @@ const BioCard = ({img, text, background}) => {
             isVisibleTextWrap ? "animationBackToLeft" : ""
           }`}
         
-        ></div>
+        ></div> */}
+        <div className="bio-text-container">
+        <AnimatedPanel text={text}/>
+        </div>
         <div className="bio-data-text-container">
           <p>
             Jay Pharoah is an actor and stand-up comedian. With six seasons as a

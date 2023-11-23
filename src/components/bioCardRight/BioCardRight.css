@@ -34,10 +34,13 @@
 .bio-shadow-back {
   background-color: #c4994d;
   grid-column: 33/64;
-  grid-row: 4/60;
+  grid-row: 10/60;
   width: 100%;
   z-index: 0;
   overflow: hidden;
+  background-image: url("canvaYellow.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .biocard-pic-right {
