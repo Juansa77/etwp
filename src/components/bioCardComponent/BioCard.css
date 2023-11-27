@@ -1,7 +1,8 @@
 .biocard-container {
   min-width: 100%;
   max-width: 100%;
-  height: 80vh;
+  min-height: 1000px;
+  max-height: 1000px;
   display: flex;
   justify-content: center;
 
@@ -10,6 +11,7 @@
   background-size: cover;
   background-attachment: fixed;
   padding-top: 5vh;
+  overflow: hidden;
 
 }
 
@@ -65,25 +67,16 @@ height: 100%;
 .bio-text-container {
   /* background-color: white; */
   grid-column: 28/48;
-  grid-row: 5/13;
-  width: 100%;
+  grid-row: 5/17;
+  width: 20vw;
+  min-height: 100%;
   z-index: 3;
-  font-size: 2.5rem;
   opacity: 100%;
   color: black;
 
-  font-family: "Montserrat", sans-serif;
 }
 
-.bio-text-back {
-  width: 100%;
-  background-color: #1f1fa8;
-  grid-column: 29/49;
-  grid-row: 8/14;
-  z-index: 2;
-  position: relative;
-  left: 0%;
-}
+
 
 @keyframes textBioAnimation {
   0% {

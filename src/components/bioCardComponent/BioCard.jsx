@@ -36,7 +36,7 @@ const BioCard = ({img, text, background}) => {
         
         ></div> */}
         <div className="bio-text-container">
-        <AnimatedPanel text={text}/>
+        <AnimatedPanel text="TEXTO DE PRUEBA"/>
         </div>
         <div className="bio-data-text-container">
           <p>

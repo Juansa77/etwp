@@ -17,11 +17,11 @@ const BioCardRight = () => {
           />
         </div>
         <div className="bio-shadow-back"></div>
-        <div
-          className={`biotext-container-right ${
-            isVisibleTextWrapRight ? "animationTextToRight-right" : ""
-          }`}
-          ref={textWrapRefRight}
+        <div className="biotext-container-right"
+          // className={`biotext-container-right ${
+          //   isVisibleTextWrapRight ? "animationTextToRight-right" : ""
+          // }`}
+          // ref={textWrapRefRight}
         >
           {" "}
           <h3>Frase de ejemplo</h3>

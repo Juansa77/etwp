@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useRef } from "react";
 import useIsVisible from "../../Hooks/useIsVisible";
 import "./AnimatedPanel.css";
