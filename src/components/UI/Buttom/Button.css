@@ -1,0 +1,24 @@
+.link-button {
+  display: flex;
+  border-radius: 40px;
+  width: 200px;
+  line-height: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 75px;
+  font-size: 1.2rem;
+  padding: 0.1rem;
+  background-color: black;
+  color: white;
+  transition: background-color 0.3s linear;
+}
+
+.link-button:hover {
+  background-color: rgb(175, 173, 173);
+
+  transition: background-color 0.3s linear;
+  -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+  -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+  box-shadow: 3px 3px 10px 3px #8f8d8d;
+}

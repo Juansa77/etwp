@@ -1,0 +1,95 @@
+.book-data-container {
+  width: 100%;
+  min-height: 120vh;
+  max-height: 120vh;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: repeat(24, 1fr);
+}
+
+.book-data-hero-container {
+  border: 1px solid yellow;
+  grid-column: 1/25;
+  grid-row: 1/7;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.book-data-hero-img {
+  grid-column: 1/13;
+  grid-row: 1/6;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero-book-data-text {
+  grid-column: 5/9;
+  grid-row: 3/4;
+  z-index: 1;
+  font-size: 3rem;
+  color: white;
+}
+
+.book-data-info-container {
+  grid-column: 3/24;
+  grid-row: 8/24;
+  border: 1px solid blue;
+  display: flex;
+}
+
+.book-data-left-container {
+  display: flex;
+  height: 100%;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+  justify-content: first baseline;
+}
+
+.book-data-right-container {
+  height: 100%;
+  width: 60%;
+  border: 1px solid green;
+  padding-right: 20rem;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blueviolet;
+}
+
+.book-data-text-right-container {
+  height: 70%;
+}
+
+.book-data-plot-text {
+  font-size: 1.8rem;
+}
+
+.book-data-left-img {
+  width: 400px;
+  border-radius: 7px;
+  -webkit-box-shadow: 5.5px 6.5px 10px 1px #dcd6d6;
+-moz-box-shadow: 5.5px 6.5px 10px 1px #dcd6d6;
+box-shadow: 5.5px 6.5px 10px 1px #dcd6d6;
+}
+
+.book-tec-text-container{
+    width: 400px;
+  
+}
+
+
+.book-data-btn-container {
+    padding: 1rem;
+  display: flex;
+  width: 100%;
+  height: 30%;
+
+  border: 1px solid blanchedalmond;
+  gap: 2vw;
+}

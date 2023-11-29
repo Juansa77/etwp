@@ -16,6 +16,8 @@ const BooksComponent = () => {
           image={book.image}
           buy={book.link}
           goodReads={book.goodReadsLink}
+          link={book.innerLink}
+          
         />
       ))}
     </div>

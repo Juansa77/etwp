@@ -1,9 +1,13 @@
+import { Link, Navigate } from "react-router-dom";
+Navigate
 import "./CardComponent.css";
 
-const CardComponent = ({ title, image, buy, goodReads }) => {
+
+const CardComponent = ({ title, image, buy, goodReads, link }) => {
   return (
     <div className="card-container">
-      <img src={image} className="bookCover" alt={`${title} cover`} />
+    <Link to={link}>
+      <img src={image} className="bookCover" alt={`${title} cover`} /></Link>
       <div className="card-links-container">
         <a className="buy-link" href={buy}>
           <h3>Comprar</h3>

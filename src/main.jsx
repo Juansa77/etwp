@@ -7,6 +7,9 @@ import NavBar from "./components/NavBar/NavBar.jsx";
 import Home from "./pages/home/Home.jsx";
 import Profile from "./pages/profile/Profile.jsx";
 import Products from "./pages/products/Products.jsx";
+import YepannaPage from "./pages/yepannaPage/YepannaPage.jsx";
+import JanaPage from "./pages/janaPage/JanaPage.jsx";
+
 
 
 
@@ -20,9 +23,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/hogar-en-yepanna" element={<YepannaPage />} />
+          <Route path="/jana-en-las-estrellas" element={<JanaPage />} />
         </Route>  
       </Routes>
-      
       
     </BrowserRouter>
 

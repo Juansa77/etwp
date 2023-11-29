@@ -1,9 +1,12 @@
 
+import BooksComponent from "../../components/BooksComponent/BooksComponent"
 import "./Products.css"
 
 const Products = () => {
   return (
-    <div>Products</div>
+    <div className="products-container">
+        <BooksComponent/>
+    </div>
   )
 }
 
