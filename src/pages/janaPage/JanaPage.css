@@ -1,0 +1,10 @@
+.book-container-jana{
+    min-height: 100vh;
+    max-height:min-content;
+    min-width: 100vw;
+    max-width: 100vw;
+   
+    background-image: url("canvaYellow.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}

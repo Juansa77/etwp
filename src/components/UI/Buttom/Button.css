@@ -22,3 +22,13 @@
   -moz-box-shadow: 3px 3px 10px 3px #dddddd;
   box-shadow: 3px 3px 10px 3px #8f8d8d;
 }
+
+
+@media screen and (max-width: 768px){
+  .link-button{
+    width: 140px;
+    height: 55px;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}

@@ -1,7 +1,10 @@
-.book-container{
-    border:1px solid red;
-    min-height: 100vh;
+.book-container-yepanna{
+    min-height: 150vh;
+    max-height:15vh;
     min-width: 100vw;
     max-width: 100vw;
-    padding-top: 10vh;
+   
+    background-image: url("canvaYellow.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }

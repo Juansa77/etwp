@@ -4,7 +4,7 @@ import jsonData from "../../data/booksData.json";
 
 const YepannaPage = () => {
   return (
-    <div className="book-container">
+    <div className="book-container-yepanna">
       <BookData
         heroText={"Una aventura con mucha comida"}
         heroImage={"elena5.jpg"}
