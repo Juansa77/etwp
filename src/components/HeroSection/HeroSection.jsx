@@ -10,7 +10,7 @@ const HeroSection = () => {
   const animatedFirstRef = useRef();
   const [currentOpacity, setCurrentOpacity] = useState(100);
   const scrollTotal = useVerticalScrollPosition();
- 
+
 
   //*----UseEffect PARA LA ANIMACIÓN FRONTAL
  /* useEffect(() => {
@@ -35,16 +35,17 @@ const HeroSection = () => {
         <img
           className="frontalImage"
           ref={frontalImage}
-          src={"frontalHero.png"}
+          src={"hero-front-image.png"}
         />
+        {/* <img className="hero-main-pic" src="elenaTR2.png"/> */}
         <h1 className="hero-firstText" ref={animatedFirstRef}>
-          Soy
+
         </h1>
         <h1 className={`animated-hero-text }`} ref={animatedText}>
           ELENA TEJEDOR
         </h1>
         <h1 className="hero-subtext" ref={animatedSubText}>
-          Escritora
+
         </h1>
       </div>
     </div>

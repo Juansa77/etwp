@@ -20,14 +20,19 @@ const BioComponent = () => {
     <div className="bio-container">
       <div className="overlayBio"></div>
     <div className= {`bio-text-presentation-container ${isVisibleText ? "opacitySlow" : ""}`} ref={presentationRef}   >
-    <img className={`bio-pic ${isVisible ? "opacityFast" : ""}`} src="elena1.jpg" ref={bioPicRef} />
-      <h3>Esto es como lo que pone al principio en pequeño</h3>
+     
+     <div className="bio-pic-container">
+     <img className={`bio-pic ${isVisible ? "opacityFast" : ""}`} src="elena2.jpg" ref={bioPicRef} /> 
+     </div>
+     <div className="bio-text-wrap">
+     <h3>Esto es como lo que pone al principio en pequeño</h3>
      
      <h1>Esto en grande en plan motivador</h1>
       <p>Camila was born and raised in a small seaside town surrounded by
             breathtaking landscapes in the south of Brazil called Araranguá From
          
        .</p>
+       </div>
     </div>
  
       {/* <div className="bio-data-container">

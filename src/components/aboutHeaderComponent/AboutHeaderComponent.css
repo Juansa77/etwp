@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap");
 
 .about-header-container {
-  min-height: 110vh;
-  max-height: 110vh;
+  min-height: 100vh;
+  max-height: 100vh;
 
   width: 100%;
   /*background-image: url("fondo elena wp.jpg");*/
   background-position: 50% 50%;
-  background-size: 45%;
+  background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
 
   background-color: #c4994d;
@@ -23,14 +24,14 @@
 }
 
 .about-header-text {
-  font-size: 17vh;
+  font-size: 10rem;
   font-family: "Montserrat", sans-serif;
 
-  color:#c4994d;
-  text-shadow: 2px 4px #421010;
+  color:white;
+
 
   position: relative;
-  top: -14%;
+  top: -19%;
   overflow: visible;
 }
 
@@ -55,11 +56,11 @@
     opacity: 0;
   }
   50% {
-    left: 3%;
+    left: 13%;
     opacity: 50%;
   }
   100% {
-    left: 7%;
+    left: 17%;
     opacity: 100%;
   }
 }
@@ -70,11 +71,11 @@
     opacity: 0;
   }
   50% {
-    right: 3%;
+    right: 13%;
     opacity: 50%;
   }
   100% {
-    right: 7%;
+    right: 15%;
     opacity: 100%;
   }
 }
@@ -94,31 +95,31 @@
 
 .books-text {
   width: 30%;
-
+top:-15%;
   position: relative;
-  left: 7%;
+  left: 17%;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 3.3rem;
+  font-size: 4rem;
 }
 
 .books-text-block {
   position: relative;
-  right: 7%;
-  top: 14%;
-  width: 20%;
+  right: 15%;
+  top: 13%;
+  width: 30%;
   color: white;
   font-family: "Montserrat", sans-serif;
-  font-size: 3.3rem;
+  font-size: 4rem;
   text-align: right;
 }
 
 .animationText {
-  animation: toRightAndOpcityAnimation 0.7s linear;
+  animation: toRightAndOpcityAnimation 1s linear;
 }
 
 .animationTextRight {
-  animation: toLeftAndOpcityAnimation 0.7s linear;
+  animation: toLeftAndOpcityAnimation 1s linear;
 }
 
 .opacityFast {
