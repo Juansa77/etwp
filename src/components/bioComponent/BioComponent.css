@@ -3,9 +3,10 @@
 .bio-container {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
-  max-height: 100vh;
-  width: 100vw;
+  min-height:250vh;
+  flex-direction: column;
+  max-height:250vh;
+  max-width: 100vw;
   background-color: black;
   z-index: 1;
   overflow: hidden;
@@ -50,20 +51,21 @@
 .bio-text-presentation-container {
   z-index: 10;
   width: 70%;
-  height: 90%;
+  height: 150vh;
   display: flex;
 
-  justify-content: space-between;
+
+
 
   
 }
 
-.bio-text-wrap{
+.bio-text-wrap2{
   margin-top: 30vh;
-width: 50%;
+width: 90%;
 }
 
-.bio-text-wrap> p {
+.bio-text-wrap2> p {
  
   font-family: "Montserrat", sans-serif;
   font-style: italic;
@@ -71,21 +73,21 @@ width: 50%;
   width: 100%;
   text-align: left;
 }
-.bio-text-wrap > h4 {
+.bio-text-wrap2 > h4 {
 
   text-align: left;
   font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 2rem;
 }
-.bio-text-wrap > h3 {
+.bio-text-wrap2 > h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   font-style: italic;
   text-align: left;
 }
 
-.bio-text-wrap > h1 {
+.bio-text-wrap2 > h1 {
   font-size: 4rem;
   text-align: left;
   font-style: italic;
@@ -152,6 +154,13 @@ width: 50%;
   );
 }
 
+.other{
+
+  width: 100vw;
+  z-index: 1;
+  margin-top: 20vh;
+}
+
 .bio-text {
   width: 70%;
   font-family: "Montserrat", sans-serif;
@@ -196,27 +205,34 @@ width: 50%;
 @media screen and (max-width: 768px) {
   .bio-container {
     
-    min-height: 170vh;
+    min-height: 370vh;
    
     
   }
-
+.other{
+  min-height: 100vh;
+  margin-top: 120vh;
+}
   .bio-text-presentation-container{
-    gap:4vh;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    border: 1px solid red;
+    height: 100vh;
   }
 
-  .bio-text-presentation-container > p {
-    width: 85%;
-    font-size: 3rem;
-  }
+.bio-text-wrap2>p{
+  font-size: 2rem;
+  min-width: 100%;
 
+}
   
   .bio-data-container {
     flex-direction: column;
     min-width: 100vw;
     max-width: 100vw;
     max-height: 70vh;
-    margin-top: 10vh;
+   
 
   }
 
@@ -226,11 +242,12 @@ width: 50%;
     padding: 0;
     max-height: min-content;
     color: white;
+
   }
 
   .bio-pic {
     margin-bottom: -6vh;
-    height: 40vh;
+    height: 60vh;
     margin-top: 6vh;
   }
 }

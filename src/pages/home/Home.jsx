@@ -9,6 +9,7 @@ import HeroSection from "../../components/HeroSection/HeroSection";
 // import WavesDiv from "../../components/WavesDiv/WavesDiv";
 // import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
 import BioComponent from "../../components/bioComponent/BioComponent";
+// eslint-disable-next-line no-unused-vars
 import AboutHeaderComponent from "../../components/aboutHeaderComponent/AboutHeaderComponent";
 import BooksComponent from "../../components/BooksComponent/BooksComponent";
 import Footer from "../../components/footer/Footer";
@@ -23,8 +24,9 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <BioComponent/>
-      <AboutHeaderComponent text="Mis libros" image="canvaYellow.jpg"/>
-      <BooksComponent/>
+      <BooksComponent text="Mis libros"/>
+      {/* <AboutHeaderComponent text="Mis libros" image="canvaYellow.jpg"/>
+   */}
       <Footer/>
       
       

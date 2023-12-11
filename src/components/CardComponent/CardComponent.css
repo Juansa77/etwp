@@ -89,9 +89,9 @@
 @media screen and (max-width: 768px) {
   .card-container {
     margin: 1vh; /* Agregar margen en lugar de padding */
-    min-height: 72vh;
+    min-height: 70vh;
     max-height: auto;
-    width: 90%;
+    width: 100%;
     margin-bottom: 5vh; /* Ajustar el margen inferior */
   }
 
@@ -100,6 +100,8 @@
       top:90%;
     }
   }
+
+  .bookCover{width: 60vw;}
 
   .buy-link,
   .goodReads-link {

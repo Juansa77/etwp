@@ -9,6 +9,7 @@
 
 
   background-image: url("backCanvaBlue.jpg");
+  background-size: cover;
 }
 
 /* Contenido principal */
