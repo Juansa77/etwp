@@ -2,40 +2,42 @@ import { useRef } from "react";
 import useIsVisible from "../../Hooks/useIsVisible";
 import "./BioComponent.css";
 
-
 const BioComponent = () => {
   const bioPicRef = useRef();
   // eslint-disable-next-line no-unused-vars
   const bioTextRef = useRef();
-  const isVisible= useIsVisible(bioPicRef)
-  const presentationRef = useRef()
-  const isVisibleText = useIsVisible(presentationRef)
-
-
-
-
+  const isVisible = useIsVisible(bioPicRef);
+  const presentationRef = useRef();
+  const isVisibleText = useIsVisible(presentationRef);
 
   return (
-    
     <div className="bio-container">
       <div className="overlayBio"></div>
-    <div className= {`bio-text-presentation-container ${isVisibleText ? "opacitySlow" : ""}`} ref={presentationRef}   >
-     
-     <div className="bio-pic-container">
-     <img className={`bio-pic ${isVisible ? "opacityFast" : ""}`} src="elena2.jpg" ref={bioPicRef} /> 
-     </div>
-     <div className="bio-text-wrap2">
-     <h3>Esto es como lo que pone al principio en pequeño</h3>
-     
-     <h1>Esto en grande en plan motivador</h1>
-      <p>Camila was born and raised in a small seaside town surrounded by
+      <div
+        className={`bio-text-presentation-container ${
+          isVisibleText ? "opacitySlow" : ""
+        }`}
+        ref={presentationRef}
+      >
+        <div className="bio-pic-container">
+          <img
+            className={`bio-pic ${isVisible ? "opacityFast" : ""}`}
+            src="elena2.jpg"
+            ref={bioPicRef}
+          />
+        </div>
+        <div className="bio-text-wrap2">
+          <h3>Esto es como lo que pone al principio en pequeño</h3>
+
+          <h1>Esto en grande en plan motivador</h1>
+          <p>
+            Camila was born and raised in a small seaside town surrounded by
             breathtaking landscapes in the south of Brazil called Araranguá From
-         
-       .</p>
-       </div>
-       
-    </div>
- 
+            .
+          </p>
+        </div>
+      </div>
+
       {/* <div className="bio-data-container">
       <div className="bio-data-wrapper">
         <div className="bio-pic-container">
@@ -63,49 +65,45 @@ const BioComponent = () => {
         </div>
       </div>
       </div> */}
-   
-   <div className="other">
-   <div className="list-container">
-      <div
-        className="list-item-container"
-        style={{ backgroundImage: "url(elena3.jpg)" }}
-      ></div>
-      <div className="list-item-container">
-        <div className="list-text-container">
-          <p className="list-txt">Prueba de texto</p>
-        </div>
-      </div>
-      <div
-        className="list-item-container"
-        style={{ backgroundImage: "url(elena1.jpg)" }}
-      ></div>
-      <div
-        className="list-item-container"
-        style={{ backgroundImage: "url(elena2.jpg)" }}
-      ></div>
-      <div
-        className="list-item-container"
-        style={{ backgroundImage: "url(elena5.jpg)" }}
-      ></div>
-      <div className="list-item-container"    style={{ backgroundImage: "url(elena3.jpg)" }}></div>
-      <div className="list-item-container" >
-      <div className="list-text-container">
-        <p className="list-txt">
-            Prueba de texto
-        </p>
-        </div>
-      </div>
-      <div
-        className="list-item-container"
-        style={{ backgroundImage: "url(elena4.jpg)" }}
-      ></div>
-   
 
-    
-   
-  
-    </div>
-    </div>
+      <div className="other">
+        <div className="list-container">
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena3.jpg)" }}
+          ></div>
+          <div className="list-item-container">
+            <div className="list-text-container">
+              <p className="list-txt">Prueba de texto</p>
+            </div>
+          </div>
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena1.jpg)" }}
+          ></div>
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena2.jpg)" }}
+          ></div>
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena5.jpg)" }}
+          ></div>
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena3.jpg)" }}
+          ></div>
+          <div className="list-item-container">
+            <div className="list-text-container">
+              <p className="list-txt">Prueba de texto</p>
+            </div>
+          </div>
+          <div
+            className="list-item-container"
+            style={{ backgroundImage: "url(elena4.jpg)" }}
+          ></div>
+        </div>
+      </div>
     </div>
   );
 };

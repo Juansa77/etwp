@@ -48,7 +48,8 @@
     .list-item-container {
         flex: 1 0 calc(45% - 0.3rem); /* Dos elementos por fila en pantallas pequeñas */
         max-width: calc(45% - 0.3rem);
-        min-height: 10vh;
+        min-height: 28vh;
+        max-height: 28vh;
     }
 
     .list-txt {

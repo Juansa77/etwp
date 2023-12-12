@@ -34,14 +34,14 @@ const BooksComponent = ({image, text}) => {
       
     </div>
     <div className="overlayBooks"></div>
-    <div className="books-wrapper">
+    <div className="books-wrapper2">
     <h1
         className={`about-header-text ${isVisible ? "opacityFast" : ""}`}
         ref={aboutTextRef}
       >
         {text}
       </h1>
-    
+    <div className="book-card-container">
       {data.map((book, index) => (
         <CardComponent
           key={index}
@@ -53,6 +53,7 @@ const BooksComponent = ({image, text}) => {
           
         />
       ))}
+      </div>
       </div>
 
     

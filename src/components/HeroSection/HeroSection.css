@@ -135,4 +135,23 @@ color:beige;
     left:  20%;
     font-size: 8rem;
   }
+
+  .animated-hero-text{
+    overflow: hidden;
+    position: relative;
+   width: min-content;
+    font-size: 5rem;
+    line-height: 4.6rem;
+    color: beige;
+    text-align: left;
+    z-index: 0;
+    right: 0%;
+    height: min-content;
+ 
+    transition: opacity 0.1s linear;
+    top:27%;
+    left:05%;
+    position: fixed;
+    
+  }
 }

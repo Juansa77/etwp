@@ -157,6 +157,7 @@ width: 90%;
 .other{
 
   width: 100vw;
+  min-height: 100vh;
   z-index: 1;
   margin-top: 20vh;
 }
@@ -205,20 +206,20 @@ width: 90%;
 @media screen and (max-width: 768px) {
   .bio-container {
     
-    min-height: 370vh;
+    min-height: 380vh;
    
     
   }
 .other{
-  min-height: 100vh;
-  margin-top: 120vh;
+  min-height: 120vh;
+
 }
   .bio-text-presentation-container{
     flex-direction: column;
     width: 100vw;
     align-items: center;
     border: 1px solid red;
-    height: 100vh;
+    min-height: 240vh;
   }
 
 .bio-text-wrap2>p{
