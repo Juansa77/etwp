@@ -155,3 +155,17 @@ color:beige;
     
   }
 }
+
+@media screen and (max-width: 1024px){
+  .animated-hero-text{
+    font-size: 10rem;
+    line-height: 8.5rem;
+    left: 20%;
+  }
+
+  .frontalHero{
+    justify-content: center;
+justify-items: center;
+  }
+
+}

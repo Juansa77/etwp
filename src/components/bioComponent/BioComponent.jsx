@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import useIsVisible from "../../Hooks/useIsVisible";
 import "./BioComponent.css";
+import ListComponent from "../listComponent/ListComponent";
+ListComponent;
 
 const BioComponent = () => {
   const bioPicRef = useRef();
@@ -67,42 +69,7 @@ const BioComponent = () => {
       </div> */}
 
       <div className="other">
-        <div className="list-container">
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena3.jpg)" }}
-          ></div>
-          <div className="list-item-container">
-            <div className="list-text-container">
-              <p className="list-txt">Prueba de texto</p>
-            </div>
-          </div>
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena1.jpg)" }}
-          ></div>
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena2.jpg)" }}
-          ></div>
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena5.jpg)" }}
-          ></div>
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena3.jpg)" }}
-          ></div>
-          <div className="list-item-container">
-            <div className="list-text-container">
-              <p className="list-txt">Prueba de texto</p>
-            </div>
-          </div>
-          <div
-            className="list-item-container"
-            style={{ backgroundImage: "url(elena4.jpg)" }}
-          ></div>
-        </div>
+        <ListComponent />
       </div>
     </div>
   );

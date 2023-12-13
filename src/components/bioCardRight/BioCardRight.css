@@ -179,7 +179,7 @@
   .biotext-container-right {
     grid-column: 1/63;
     grid-row: 4/12;
-    color: black;
+    color: white;
     font-size: 1.9rem;
   }
 

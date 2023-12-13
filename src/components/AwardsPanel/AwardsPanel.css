@@ -22,7 +22,7 @@
 }
 
 .awards-list > li {
-  min-width: 70%;
+  min-width: 80%;
 }
 
 .list-item-text {
@@ -32,4 +32,11 @@
 
 .list-item-a {
   color: #c4994d;
+}
+
+
+@media screen and (max-width: 768px){
+  .awards-list{
+    padding: 2rem;
+  }
 }

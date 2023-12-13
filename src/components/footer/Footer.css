@@ -123,3 +123,9 @@
     min-height: 40vh;
   }
 }
+
+@media screen and (max-width: 1024px){
+  .footer{
+    min-height: min-content;
+  }
+}

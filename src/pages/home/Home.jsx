@@ -13,6 +13,8 @@ import BioComponent from "../../components/bioComponent/BioComponent";
 import AboutHeaderComponent from "../../components/aboutHeaderComponent/AboutHeaderComponent";
 import BooksComponent from "../../components/BooksComponent/BooksComponent";
 import Footer from "../../components/footer/Footer";
+import BioCard from "../../components/bioCardComponent/BioCard";
+BioCard
 
 
 
@@ -24,6 +26,7 @@ const Home = () => {
     <div className="home">
       <HeroSection />
       <BioComponent/>
+      <BioCard img={"gato-prueba3.png"} text={"Otro texto"}  background={"canvaYellow.jpg"}/>
       <BooksComponent text="Mis libros"/>
       {/* <AboutHeaderComponent text="Mis libros" image="canvaYellow.jpg"/>
    */}

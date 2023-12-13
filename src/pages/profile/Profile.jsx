@@ -12,9 +12,8 @@ const Profile = () => {
     <div className="profile-container">
       <BioCard img={"elenaTR2.png"} text={"Texto de ejemplo"} background={"canvaYellow.jpg"}/>
       <BioCardRight/>
-      <ListComponent/>
       <BioCard img={"gato-prueba3.png"} text={"Otro texto"} />
-      <AwarsdsPanel/>
+      <AwarsdsPanel text={"Mis premios"}/>
     </div>
   )
 }
