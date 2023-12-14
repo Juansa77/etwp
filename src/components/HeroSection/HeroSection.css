@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 .heroContainer {
   min-width: 100vw;
   max-width: 100vw;
-  min-height: 130vh;
+  min-height: 140vh;
   background-image: url("hero-background.jpg");
   background-position: 55%;
   background-size: cover;
@@ -15,42 +14,38 @@
 .frontalHero {
   min-width: 100vw;
   max-width: 100vw;
-  height: 100%;
-  position: relative;
+  min-height: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .frontalImage {
-  overflow: visible;
-  min-width: 70vw;
-  max-width: 70vw;
-  height: 80%;
- object-fit: cover;
-  position: absolute;
-  font-size: 25vh;
-  top: 60%; /* Alinea verticalmente el texto en el centro */
-  left: 50%; /* Alinea horizontalmente el texto en el centro */
-  transform: translate(-50%, -50%); /* Centra el texto */
+  min-width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  transform: translate(-5%, 20%);
+  position: relative;
+  /* Alinea verticalmente el texto en el centro */
+
   color: beige;
-  padding: 10px;
+
   z-index: 3;
   opacity: 100%;
   transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
 }
 
-
-.hero-main-pic{
-  position:absolute;
-  left:60%;
-  top:10%;
-  height:90%;
+.hero-main-pic {
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  height: 90%;
 }
 .animated-hero-text {
   overflow: hidden;
   position: relative;
- width: min-content;
+  width: min-content;
   font-size: 17rem;
   line-height: 14rem;
   color: beige;
@@ -60,9 +55,8 @@
   text-align: center;
   transition: opacity 0.1s linear;
   top: 10%;
-  left:25%;
+  left: 25%;
   position: fixed;
-  
 }
 
 .hero-subtext {
@@ -70,20 +64,20 @@
   position: relative;
   font-size: 7rem;
   width: min-content;
-  top:50%;
+  top: 50%;
   left: 10%;
   transition: opacity 0.1s linear;
   color: beige;
   z-index: 0;
   position: fixed;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
   text-shadow: 2px 4px #421010;
 }
 
 .hero-firstText {
   font-size: 7rem;
-  font-family: 'Dancing Script', cursive;
-color:beige;
+  font-family: "Dancing Script", cursive;
+  color: beige;
   position: relative;
   position: fixed;
   transition: opacity 0.1s linear;
@@ -96,21 +90,17 @@ color:beige;
 @keyframes frontImageAnimation {
   0% {
     margin-left: 3%;
-
   }
 
   40% {
     margin-left: 5%;
-   
   }
   70% {
     margin-left: 7%;
-    
   }
 
   100% {
     margin-left: 3%;
-    
   }
 }
 
@@ -118,28 +108,26 @@ color:beige;
   /* animation: frontImageAnimation 7s infinite linear; */
 }
 
-
-
 @media screen and (max-width: 768px) {
-  .animated-hero-text{
+  .animated-hero-text {
     font-size: 10rem;
     line-height: 10rem;
   }
 
-  .hero-firstText{
+  .hero-firstText {
     left: 50%;
-    top:12%;
+    top: 12%;
   }
 
-  .hero-subtext{
-    left:  20%;
+  .hero-subtext {
+    left: 20%;
     font-size: 8rem;
   }
 
-  .animated-hero-text{
+  .animated-hero-text {
     overflow: hidden;
     position: relative;
-   width: min-content;
+    width: min-content;
     font-size: 5rem;
     line-height: 4.6rem;
     color: beige;
@@ -147,25 +135,39 @@ color:beige;
     z-index: 0;
     right: 0%;
     height: min-content;
- 
+
     transition: opacity 0.1s linear;
-    top:27%;
-    left:05%;
+    top: 27%;
+    left: 05%;
     position: fixed;
-    
   }
 }
 
-@media screen and (max-width: 1024px){
-  .animated-hero-text{
-    font-size: 10rem;
-    line-height: 8.5rem;
-    left: 20%;
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .animated-hero-text {
+    font-size: 18rem;
+    line-height: 17rem;
+    left: 0%;
   }
 
-  .frontalHero{
+  .frontalHero {
     justify-content: center;
-justify-items: center;
+    justify-items: center;
+  }
+
+  .frontalImage {
+
+
+    min-height: 90vh;
+    transform: translate(0%, 60%);
+    position: relative;
+    /* Alinea verticalmente el texto en el centro */
+  
+    color: beige;
+  
+    z-index: 3;
+    opacity: 100%;
+    transition: 2s ease-in-out; /* D /* Cambia este valor a 1 para poner la imagen por encima del texto */
   }
 
 }

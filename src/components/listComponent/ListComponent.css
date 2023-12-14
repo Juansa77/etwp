@@ -1,5 +1,6 @@
 .list-container {
-    max-width: 100%;    min-height: 1200px;
+    max-width: 100%;    
+    min-height: 1200px;
     max-height: 1200px;
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +11,7 @@
 
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 .list-item-container {
@@ -36,12 +38,13 @@
     background-size: cover;
     background-attachment: fixed;
 }
+/* MOBILE*/
 
-@media screen and (max-width: 768px) {
+@media (min-width: 390px) and (max-width: 1023px){
 
 .list-container{
-    min-height: 100vh;
-    max-height: min-content;
+    min-height: 50vh;
+    max-height: 50vh
 }
 
     .list-item-container {
@@ -57,10 +60,10 @@
     }
 }
 
-@media screen and (max-width: 1769px) {
+@media (min-width: 1024px) and (max-width: 1769px) {
     .list-container{
-        min-height: 70vh;
-        max-height:70vh;
+        min-height: 60vh;
+        max-height:60vh;
         flex-wrap: wrap;
     }
 
@@ -69,8 +72,8 @@
         margin: 0;
         padding: 0;
         flex: 1 0 calc(24% - 0.3rem); /* Cuatro elementos por fila con espacio entre ellos */
-        min-height: 40vh;
-        max-height: 40vh;
+        min-height: 20vh;
+        max-height: 20vh;
         min-width: 20vw; /* Para evitar problemas de desbordamiento */
         box-sizing: border-box; /* Incluir el relleno y el borde en el ancho total */
         margin-bottom: 0.3rem; /* Espacio entre las filas */

@@ -11,7 +11,7 @@
   z-index: 1;
   overflow: hidden;
   color: white;
-align-content: center;
+  align-content: center;
   align-items: center;
   position: relative;
 }
@@ -54,14 +54,13 @@ align-content: center;
   display: flex;
   align-items: center;
   margin: 0;
- 
 }
 
 .bio-text-wrap2 {
   display: flex;
 
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   width: 90%;
 }
 
@@ -126,7 +125,6 @@ justify-content: center;
   height: 100%;
   align-items: center;
   justify-content: center;
-
 }
 
 .bio-pic {
@@ -200,26 +198,52 @@ justify-content: center;
   animation: opacityAnimationFast 1.5s linear;
 }
 
-/* Media queries for responsiveness */
+/* ----MOBILE*/
 
-@media screen and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1023px) {
   .bio-container {
-    min-height: 380vh;
+    min-height: 320vh;
+
   }
   .other {
-    min-height: 120vh;
+    min-height: 320vh;
+    border: 1px solid green;
   }
   .bio-text-presentation-container {
     flex-direction: column;
     width: 100vw;
     align-items: center;
 
-    min-height: 240vh;
+
+    min-height: 140vh;
+
   }
 
   .bio-text-wrap2 > p {
     font-size: 2rem;
     min-width: 100%;
+  }
+
+  .bio-text-wrap2>h3{
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .bio-text-wrap2>h1{
+    font-size: 3rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bio-text-wrap2>p{
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .bio-data-container {
@@ -239,7 +263,7 @@ justify-content: center;
 
   .bio-pic {
     margin-bottom: -6vh;
-    height: 60vh;
+    height: 40vh;
     margin-top: 6vh;
   }
 }
@@ -257,26 +281,34 @@ justify-content: center;
 }
 
 /* Media queries for tablets and larger screens */
-@media screen and (max-width: 1024px) {
+@media  (min-width: 1024px) and (max-width: 1280px) {
   .bio-container {
-    min-height: 190vh; /* Adjust the value as needed */
-    max-height: 190vh;
+    min-height: 100vh; /* Adjust the value as needed */
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content:flex-start;
+
+
   }
 
   .other {
-    min-height: 100vh; /* Adjust the value as needed */
+    min-height: 50vh; /* Adjust the value as needed */
+    max-height: 50vh;
+
+    margin: 0;
+    padding: 0;
   }
 
   .bio-text-presentation-container {
-    min-height: 70vh; /* Adjust the value as needed */
-    max-height: 70vh;
+    min-height: 40vh; /* Adjust the value as needed */
+    max-height: 40vh;
+
     padding: 1rem;
+    margin: 0;
+    padding: 0;
   }
 
-  .bio-data-container {
-    max-width: 80%; /* Adjust the value as needed */
-    min-height: 100vh; /* Adjust the value as needed */
-  }
 
   .bio-pic-container,
   .bio-text-container {
@@ -290,7 +322,8 @@ justify-content: center;
   }
 
   .bio-pic {
-    height: 60vh; /* Adjust the value as needed */
+  width: 80%;
+  padding: 4rem; /* Adjust the value as needed */
   }
   .bio-text-wrap2 > h3 {
     font-size: 1.5rem;
@@ -309,7 +342,6 @@ justify-content: center;
     max-height: 100%;
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     display: flex;
   }
