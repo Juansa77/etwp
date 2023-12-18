@@ -9,6 +9,7 @@
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
+  z-index: 3;
 
 }
 
@@ -164,7 +165,7 @@ width: 100%;
   animation: picAnimationRight 0.8s linear;
 }
 
-@media screen and (max-width: 768px) {
+@media  (min-width: 338px) and (max-width: 1021px) {
 
   .biocard-container{
 min-height: 100vh;
@@ -198,6 +199,7 @@ max-height: 100vh;
   .bio-card-pic{
     padding-top: 1rem;
     height: 90%;
+    border: 10px solid red;
   }
   .biopic-back {
     grid-column: 5/64;
@@ -221,8 +223,8 @@ max-height: 100vh;
 
 @media  (min-width: 1024px) and (max-width: 1280px){
   .biocard-container{
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 120vh;
+    max-height: 120vh;
     
       } 
     

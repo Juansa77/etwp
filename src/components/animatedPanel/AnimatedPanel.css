@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(62, 1fr);
   grid-template-rows: repeat(62, 1fr);
+ 
 }
 
 @keyframes panel-text-animation {
@@ -115,9 +116,9 @@
   color: black;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 380px) and (max-width: 1023px){
   .animated-panel-container {
-    width: 64vw;
+    width: 300px;
     height: 10vh;
     text-align: center;
   }
@@ -133,4 +134,21 @@
 align-items: center;
 justify-content: center;
 }
+}
+
+@media  (min-width: 1024px) and (max-width: 1280px){
+  .animated-panel-container{
+    width: 500px;
+    max-height: 5vh;
+
+   
+  }
+
+  .animated-panel-wrapper{
+    height: 7vh;
+  }
+
+  .animated-panel-shadow{
+    height: 7.2vh;
+  } 
 }

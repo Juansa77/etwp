@@ -24,29 +24,30 @@ const HeroSection = () => {
     setCurrentOpacity(opacityValue - scrollTotal /27);
 
     animatedText.current.style.opacity = `${currentOpacity}%`;
-    animatedSubText.current.style.opacity = `${currentOpacity}%`;
-    animatedFirstRef.current.style.opacity = `${currentOpacity}%`;
+    // animatedSubText.current.style.opacity = `${currentOpacity}%`;
+    // animatedFirstRef.current.style.opacity = `${currentOpacity}%`;
 
   }, [scrollTotal]);
 
   return (
     <div className="heroContainer">
       <div className="frontalHero">
+       
+      {/* <img className="hero-main-pic" src="elenaTR2.png"/> 
+        <h1 className="hero-firstText" ref={animatedFirstRef}>
+
+        </h1> */}
+        <h1 className={`animated-hero-text }`} ref={animatedText}>
+          ELENA TEJEDOR
+        </h1>
+        {/* <h1 className="hero-subtext" ref={animatedSubText}>
+
+        </h1> */}
         <img
           className="frontalImage"
           ref={frontalImage}
           src={"hero-front-image.png"}
         />
-        {/* <img className="hero-main-pic" src="elenaTR2.png"/> */}
-        <h1 className="hero-firstText" ref={animatedFirstRef}>
-
-        </h1>
-        <h1 className={`animated-hero-text }`} ref={animatedText}>
-          ELENA TEJEDOR
-        </h1>
-        <h1 className="hero-subtext" ref={animatedSubText}>
-
-        </h1>
       </div>
     </div>
   );
