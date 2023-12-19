@@ -1,22 +1,51 @@
 /* eslint-disable react/prop-types */
+import { useRef } from "react";
+import useIsVisible from "../../Hooks/useIsVisible";
 import AnimatedPanel from "../animatedPanel/AnimatedPanel";
 import "./SectionPrincipal.css";
 
-const SectionPrincipal = ({ img, background }) => {
+const SectionPrincipal = ({
+  img,
+  background,
+  background2,
+  imageOrder,
+  textOrder,
+  textAlign,
+  panelAlign,
+}) => {
+  const sectionRef = useRef();
+  const isVisibleSection = useIsVisible(sectionRef);
+  console.log(isVisibleSection);
+
   return (
     <div
       className="section-container"
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="section-wrapper">
-        <div className="section-panel-wrapper">
+        <div
+          className="section-panel-wrapper"
+          style={{ justifyContent: `${panelAlign}` }}
+        >
           <AnimatedPanel text={"Lo que sea"} />
         </div>
         <div className="section-info-wrapper">
-          <div className="section-pic-wrapper">
+          <div
+            ref={sectionRef}
+            className={`section-pic-wrapper ${
+              isVisibleSection ? "backGround-animation" : ""
+            }`}
+            style={{
+              backgroundImage: `url(${background2})`,
+              order: `${imageOrder}`,
+            }}
+          >
             <img className="section-pic" src={img} />
           </div>
-          <div className="section-text-wrapper">
+          <div
+            className="section-text-wrapper"
+            style={{ order: `${textOrder}`, textAlign: `${textAlign}` }}
+          >
             {" "}
             <p className="section-text">
               Jay Pharoah is an actor and stand-up comedian. With six seasons as

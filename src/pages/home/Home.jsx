@@ -15,26 +15,35 @@ import BooksComponent from "../../components/BooksComponent/BooksComponent";
 import Footer from "../../components/footer/Footer";
 import BioCard from "../../components/bioCardComponent/BioCard";
 import SectionPrincipal from "../../components/sectionPrincipal/SectionPrincipal";
-BioCard
-
-
-
-
-
+BioCard;
 
 const Home = () => {
   return (
     <div className="home">
       <HeroSection />
       {/* <BioComponent/> */}
-      <BioCard img={"gato-prueba3.png"} text={"Otro texto"}  background={"canvaYellow.jpg"}/>
-      <SectionPrincipal text={"Otro texto"}  img={"elenaTR2.png"} background={"canvaYellow.jpg"}/>
-      <BooksComponent text="Mis libros"/>
+      <SectionPrincipal
+        text={"Otro texto"}
+        imageOrder={2}
+        textOrder={1}
+        img={"gato-prueba3.png"}
+        background={"backCanvaBlue.jpg"}
+        // background2={"canvaYellow.jpg"}
+        textAlign={"right"}
+        panelAlign={"flex-start"}
+      />
+      <SectionPrincipal
+        text={"Otro texto"}
+        img={"elenaTR2.png"}
+        background={"canvaYellow.jpg"}
+        //background2={"backCanvaBlue.jpg"}
+      />
+  
+      <BooksComponent text="Mis libros" />
       {/* <AboutHeaderComponent text="Mis libros" image="canvaYellow.jpg"/>
-   */}
-      <Footer/>
-      
-      
+       */}
+      <Footer />
+
       {/* <DivSeparator>
         <AnimatedTextFullW direction={"up"} />
       </DivSeparator>
