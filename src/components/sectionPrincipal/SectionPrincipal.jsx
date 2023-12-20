@@ -7,11 +7,13 @@ import "./SectionPrincipal.css";
 const SectionPrincipal = ({
   img,
   background,
+  backgrountAtt,
   background2,
   imageOrder,
   textOrder,
   textAlign,
   panelAlign,
+  text
 }) => {
   const sectionRef = useRef();
   const isVisibleSection = useIsVisible(sectionRef);
@@ -20,14 +22,14 @@ const SectionPrincipal = ({
   return (
     <div
       className="section-container"
-      style={{ backgroundImage: `url(${background})` }}
+      style={{ backgroundImage: `url(${background})`, backgroundAttachment:`${backgrountAtt}` }}
     >
       <div className="section-wrapper">
         <div
           className="section-panel-wrapper"
           style={{ justifyContent: `${panelAlign}` }}
         >
-          <AnimatedPanel text={"Lo que sea"} />
+          <AnimatedPanel text={text} />
         </div>
         <div className="section-info-wrapper">
           <div

@@ -5,7 +5,7 @@ import "./Home.css";
 import HeroSection from "../../components/HeroSection/HeroSection";
 // import AnimatedTextBack from "../../components/AnimatedTextBack/AnimatedTextBack";
 // import GradientDivAnimated from "../../components/GradientDivAnimated/GradientDivAnimated";
-// import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
+ import AnimatedTextFullW from "../../components/AnimatedTextFullWidth/AnimatedTextFullW";
 // import WavesDiv from "../../components/WavesDiv/WavesDiv";
 // import AnimatedGallery from "../../components/animatedGallery/animatedGallery";
 import BioComponent from "../../components/bioComponent/BioComponent";
@@ -23,22 +23,26 @@ const Home = () => {
       <HeroSection />
       {/* <BioComponent/> */}
       <SectionPrincipal
-        text={"Otro texto"}
+        text={"AQUÍ SALE NIEVE"}
         imageOrder={2}
         textOrder={1}
         img={"gato-prueba3.png"}
         background={"backCanvaBlue.jpg"}
-        // background2={"canvaYellow.jpg"}
-        textAlign={"right"}
+        //background2={"canvaYellow.jpg"}
+        textAlign={"left"}
         panelAlign={"flex-start"}
+        backgrountAtt={"scroll"}
+     
       />
       <SectionPrincipal
-        text={"Otro texto"}
+        text={"AQUÍ SALE ELENA"}
         img={"elenaTR2.png"}
         background={"canvaYellow.jpg"}
+        textAlign={"right"}
+        backgrountAtt={"fixed"}
         //background2={"backCanvaBlue.jpg"}
       />
-  
+
       <BooksComponent text="Mis libros" />
       {/* <AboutHeaderComponent text="Mis libros" image="canvaYellow.jpg"/>
        */}
