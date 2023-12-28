@@ -9,6 +9,9 @@ import Profile from "./pages/profile/Profile.jsx";
 import Products from "./pages/products/Products.jsx";
 import YepannaPage from "./pages/yepannaPage/YepannaPage.jsx";
 import JanaPage from "./pages/janaPage/JanaPage.jsx";
+import NewHome from "./pages/newhome/NewHome.jsx"
+
+
 
 
 
@@ -25,6 +28,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route path="/products" element={<Products />} />
           <Route path="/hogar-en-yepanna" element={<YepannaPage />} />
           <Route path="/jana-en-las-estrellas" element={<JanaPage />} />
+          <Route path="/new-home" element={<NewHome />} />
         </Route>  
       </Routes>
       

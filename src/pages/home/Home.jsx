@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div className="home">
       <HeroSection />
-      {/* <BioComponent/> */}
+
       <SectionPrincipal
         text={"AQUÍ SALE NIEVE"}
         imageOrder={2}
