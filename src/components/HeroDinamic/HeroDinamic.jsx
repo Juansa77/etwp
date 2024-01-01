@@ -9,18 +9,18 @@ const HeroDinamic = () => {
   const textRefSurname = useRef();
   const textRefPresentation= useRef()
   const textRef3 = useRef();
-  const textRef4 = useRef();
+
 
   useEffect(() => {
     setScrollReduced(scrollTotal / 10);
 
 
 
-    textRefPresentation.current.style.rotate=`-${scrollReduced}deg`;
-    textRefName.current.style.marginRight = `${scrollReduced}rem`;
+    //textRefPresentation.current.style.lineHeight=`-${scrollReduced}rem`;
+    textRefName.current.style.marginLeft = `-${scrollReduced}rem`;
     textRefSurname.current.style.marginLeft = `${scrollReduced}rem`;
     textRef3.current.style.fontSize = `${scrollReduced}px`;
-    //textRef4.current.style.rotate = `${scrollReduced}deg`;
+
   }, [scrollTotal]);
 
   console.log("scroll total", scrollTotal);
@@ -30,10 +30,11 @@ const HeroDinamic = () => {
     <div className="hero-dinamic-container">
 
       <div className="hero-name-wrapper">
-      <p className="hero-text-presentation" ref={textRefPresentation} >¡Hola! Me llamo </p>
-        <h1 className="hero-name" ref={textRefName}>
+      <h1 className="hero-name" ref={textRefName}>
           ELENA
         </h1>
+       {/* <p className="hero-text-presentation" ref={textRefPresentation} >¡Hola! Me llamo, Vamos a hacer pruebas de párrafos </p>  */}
+        
       </div>
       <div className="glitch-wrapper">
         <div className="glitch" data-glitch="TEJEDOR" ref={textRefSurname}>
