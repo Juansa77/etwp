@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@300&family=Rubik+Moonrocks&display=swap');
+
+.glitch-component-container{
+   width: 100%;
+   height: 100%;
+   align-content: center;
+   align-items: center;
+   display: flex;
+   justify-content: right;
+   margin-right: 2rem;
+
+}
+
+.glitch-wrapper-component {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+   width: 50%;
+   background-color: #ffffff;
+   margin-right: 4rem;
+   border-top: 3px solid black;
+  
+}
+
+.glitch-component {
+   position: relative;
+   font-size: 80px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #000000;
+   letter-spacing: 5px;
+   z-index: 1;
+   text-align: right;
+  
+  
+   
+}
+
+.glitch-component:before,
+.glitch-component:after {
+   display: block;
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0.8;
+
+   
+}
+
+.glitch-component:before {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+   color: #0ff;
+   z-index: -1;
+
+   
+}
+
+.glitch-component:after {
+   animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+   color: #ff00ff;
+   z-index: -2;
+
+}
+
+@keyframes glitch-color {
+   0% {
+      transform: translate(0);
+   }
+
+   20% {
+      transform: translate(-3px, 3px);
+   }
+
+   40% {
+      transform: translate(-3px, -3px);
+   }
+
+   60% {
+      transform: translate(3px, 3px);
+   }
+
+   80% {
+      transform: translate(3px, -3px);
+   }
+
+   to {
+      transform: translate(0);
+   }
+}
