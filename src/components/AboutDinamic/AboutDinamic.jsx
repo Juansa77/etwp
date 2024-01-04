@@ -9,6 +9,7 @@ const AboutDinamic = () => {
   const [scrollReduced, setScrollReduced] = useState(0);
   const mundoMejorRef = useRef();
   const mainTextRef= useRef()
+  const texToCarousel =" BRUJERÍA   GATOS   COMIDA   UMAMI   SEXO   POLIAMOR   PISTACHOS   CHOCOLATE   GALLETAS   HALLOWEEN"
 
   useEffect(() => {
     setScrollReduced(scrollTotal / 10);
@@ -41,8 +42,9 @@ const AboutDinamic = () => {
 
   return (
     <div className="about-dinamic-container">
-    <TextCarousel/>
+  <TextCarousel text={texToCarousel}/>
     <GlitchText text={"Un poco sobre mi"}/>
+   
       <div className="about-data-container">
         <div className="about-text-wrapper">
           <p className="about-text" ref={mainTextRef}>
@@ -56,10 +58,14 @@ const AboutDinamic = () => {
             terapia, pero de momento tiene más neuras que novelas
           </p>
         </div>
+    
         <div className="about-pic-wrapper">
           <img src="elena2.jpg" className="about-pic"></img>
-        </div>
+         
+          </div>
+         
       </div>
+      
     </div>
   );
 };
