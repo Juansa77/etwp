@@ -16,24 +16,24 @@ const AboutDinamic = () => {
     if (scrollReduced < 130) {
       mundoMejorRef.current.innerText = ` MÁS HUMANO `;
       mundoMejorRef.current.style.fontFamily = `Papyrus`;
-      mundoMejorRef.current.style.fontSize = `3rem`;
+      mundoMejorRef.current.style.fontSize = `2rem`;
    
 
     } else if (scrollReduced <= 150) {
       mundoMejorRef.current.innerText = ` MÁS BONITO`;
       mundoMejorRef.current.style.fontFamily = `Lucida Handwriting`;
-      mundoMejorRef.current.style.fontSize = `4rem`;
+      mundoMejorRef.current.style.fontSize = `2rem`;
 
     } else if (scrollReduced <= 160) {
       mundoMejorRef.current.innerText = ` MÁS JUSTO`
       mundoMejorRef.current.style.fontFamily = `Verdana`;
-      mundoMejorRef.current.style.fontSize = `4rem`;
+      mundoMejorRef.current.style.fontSize = `2rem`;
 
     } else {
       mundoMejorRef.current.innerText = ` mucho mejor   `;
       mundoMejorRef.current.style.fontFamily = `Amatic SC`;
-      mundoMejorRef.current.style.fontSize = `4rem`;
-      mundoMejorRef.current.style.lineHeight = `4rem`;
+      mundoMejorRef.current.style.fontSize = `5rem`;
+      mundoMejorRef.current.style.lineHeight = `5rem`;
 
 
     }
@@ -52,7 +52,7 @@ const AboutDinamic = () => {
             vaga, pero ha leído mucho. Cree que un mundo{" "}
             <span ref={mundoMejorRef} className="animatable-text">
               {" "}
-              mejor{"  "}
+              mejor{"    "}
             </span>{"  "}
             es posible y necesario. Escribe sus dramas para costearse la
             terapia, pero de momento tiene más neuras que novelas

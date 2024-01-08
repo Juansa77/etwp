@@ -48,6 +48,8 @@
 .carousel-text {
   white-space: pre;
   font-family: "Roboto";
+  color: rgb(243, 243, 136);
+  font-weight: 700;
 
 }
 
@@ -72,6 +74,8 @@
 
 .carousel-wrapper-second {
   white-space: pre;
+  color: rgb(243, 243, 136);
+  font-weight: 700;
 
 }
 

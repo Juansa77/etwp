@@ -8,6 +8,7 @@ const AnimatedPanel = ({text}) => {
   const animatedPanelBackRef = useRef();
   const isPanelVIsible = useIsVisible(animatedPanelRef);
 
+
   return (
     <div ref={animatedPanelRef} className="animated-panel-container">
       <div

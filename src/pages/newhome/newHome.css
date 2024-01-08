@@ -1,0 +1,6 @@
+.home-container{
+    background-image: radial-gradient(#474bff 3.5px, transparent 3.5px);
+background-size: 36px 36px;
+background-color: #47d3ff;
+background-attachment: fixed;
+}

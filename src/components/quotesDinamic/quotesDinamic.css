@@ -1,0 +1,24 @@
+.quotes-container{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #ff00ff;
+    color: rgb(243, 243, 136);
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+}
+
+.quotes-text-wrapper{
+    border: 1px solid red;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text{
+    font-size: 20rem;
+   
+}
