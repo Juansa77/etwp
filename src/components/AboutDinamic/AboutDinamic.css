@@ -1,14 +1,13 @@
 .about-dinamic-container {
   max-width: 100%;
-  min-height: 120vh;
-  max-height: 120vh;
+  min-height: 150vh;
+  max-height: 150vh;
   flex-wrap: wrap;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .about-data-container {
@@ -16,11 +15,10 @@
   height: 80vh;
   max-height: 80vh;
   display: flex;
-
+  animation: vibrate-1 1s infinite linear;
 }
 
 .about-text-wrapper {
-
   width: 50%;
   display: flex;
   align-items: center;
@@ -39,11 +37,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .about-pic {
+  box-shadow: 8px 5px   black;
   height: 70%;
+ 
 }
 
 .animatable-text {
@@ -53,4 +52,25 @@
   /* font-family:'Courier New', Courier, monospace ;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+@keyframes vibrate-1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }

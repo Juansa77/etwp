@@ -22,5 +22,12 @@
 
 a {
   text-decoration: none;
+  border:7px solid black;
+  padding: 1rem;
 cursor: pointer;
+border-radius: 20px;
+width: 10vw;
+text-align: center;
+background-color: chartreuse;
+box-shadow: 8px 3px   black;
 }

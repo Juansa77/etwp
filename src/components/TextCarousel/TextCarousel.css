@@ -20,9 +20,13 @@
 
 .text-carousel-container {
   width: 100%;
+  max-width: 100%;
   margin: 0;
   display: flex;
   overflow: hidden;
+  min-height: 30vh;
+  max-height: 30vh;
+  align-items:end ;
 
 
 }
@@ -57,6 +61,7 @@
 .carousel-wrapper-second {
   margin: 0;
   text-align: left;
+  
 
   overflow: hidden;
   white-space: pre;

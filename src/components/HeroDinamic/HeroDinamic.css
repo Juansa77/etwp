@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Rubik+Moonrocks&display=swap');
 
 .hero-dinamic-container {
+  width: 100%;
   max-width: 100%;
   min-height: 120vh;
   max-height: 120vh;
@@ -14,6 +15,7 @@
 .hero-name-wrapper {
   margin-top: 10%;
   width: 100%;
+  max-width: 100%;
   text-align: right;
   display: flex;
   justify-content: space-evenly;
@@ -83,7 +85,7 @@ width: 50%;
 }
 
 .textP3 {
-  font-size: 1rem;
+  font-size: 3rem;
   background-color: #ff00ff;
   margin: 0;
   padding: 1rem;

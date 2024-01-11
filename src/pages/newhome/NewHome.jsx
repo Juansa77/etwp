@@ -8,6 +8,7 @@ import useVerticalScrollPosition from "../../Hooks/useVerticalScrollPosition";
 import QuotesDinamic from "../../components/quotesDinamic/QuotesDinamic";
 import TextCarousel from "../../components/TextCarousel/TextCarousel";
 import GlitchText from "../../components/GlitchText/GlitchText";
+import DinamicGallery from "../../components/DinamicGallery/DinamicGallery";
 
 
 
@@ -24,6 +25,7 @@ const nieveText=  " mi gato no está gordo, está fuerte es precioso en tan floj
       <QuotesDinamic/>
       <TextCarousel text={nieveText}/>
       <GlitchText text={"Mi gato"}/>
+      <DinamicGallery/>
     </div>
   );
 };
