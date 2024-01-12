@@ -15,20 +15,36 @@
   height: 80vh;
   max-height: 80vh;
   display: flex;
-  animation: vibrate-1 1s infinite linear;
+  border: 10px solid black;
+  background-color:#ff00ff;
+  /*animation: vibrate-1 1s infinite linear;*/
 }
-
 .about-text-wrapper {
   width: 50%;
   display: flex;
   align-items: center;
   justify-items: center;
-  padding: 1rem;
+  justify-content: center;
+ 
 }
+
+.about-text-content{
+  max-width: 60%;
+  height: 90%;
+  margin: 2rem;
+  border:10px solid green;
+  border-radius: 20px;
+  background-color: yellow;
+  
+}
+
 
 .about-text {
   font-family: "Roboto";
-  font-size: 3.5rem;
+  font-size: 1.5rem;
+  width: 90%;
+padding: 2rem;
+
 }
 
 .about-pic-wrapper {
@@ -37,11 +53,17 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .about-pic {
-  box-shadow: 8px 5px   black;
-  height: 70%;
+  /* box-shadow: 8px 5px   black; */
+  width:100%;
+ position: relative;
+  
+  top:-20%
+
+
  
 }
 

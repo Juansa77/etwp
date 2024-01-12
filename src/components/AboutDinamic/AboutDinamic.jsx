@@ -47,7 +47,8 @@ const AboutDinamic = () => {
    
       <div className="about-data-container">
         <div className="about-text-wrapper">
-          <p className="about-text" ref={mainTextRef}>
+        <div className="about-text-content">
+        <p className="about-text" ref={mainTextRef}>
             Elena Tejedor nació en Sevilla en 1988. Se ha movido poco porque es
             vaga, pero ha leído mucho. Cree que un mundo{" "}
             <span ref={mundoMejorRef} className="animatable-text">
@@ -57,6 +58,8 @@ const AboutDinamic = () => {
             es posible y necesario. Escribe sus dramas para costearse la
             terapia, pero de momento tiene más neuras que novelas
           </p>
+        </div>
+         
         </div>
     
         <div className="about-pic-wrapper">
