@@ -8,67 +8,56 @@ const AboutDinamic = () => {
   const scrollTotal = useVerticalScrollPosition();
   const [scrollReduced, setScrollReduced] = useState(0);
   const mundoMejorRef = useRef();
-  const mainTextRef= useRef()
-  const texToCarousel =" BRUJERÍA   GATOS   COMIDA   UMAMI   SEXO   POLIAMOR   PISTACHOS   CHOCOLATE   GALLETAS   HALLOWEEN"
+  const mainTextRef = useRef();
+  const texToCarousel =
+    " BRUJERÍA   GATOS   COMIDA   UMAMI   SEXO   POLIAMOR   PISTACHOS   CHOCOLATE   GALLETAS   HALLOWEEN";
 
   useEffect(() => {
     setScrollReduced(scrollTotal / 10);
-    if (scrollReduced < 130) {
-      mundoMejorRef.current.innerText = ` MÁS HUMANO `;
-      mundoMejorRef.current.style.fontFamily = `Papyrus`;
-      mundoMejorRef.current.style.fontSize = `2rem`;
+    if (mundoMejorRef.current) {
+      if (scrollReduced < 130) {
+        mundoMejorRef.current.innerText = `Escribo porque tengo que pagar la terapia`;
+     
    
+      } else if (scrollReduced <= 150) {
+        mundoMejorRef.current.innerText = ` Escribo para comprar hummus`;
 
-    } else if (scrollReduced <= 150) {
-      mundoMejorRef.current.innerText = ` MÁS BONITO`;
-      mundoMejorRef.current.style.fontFamily = `Lucida Handwriting`;
-      mundoMejorRef.current.style.fontSize = `2rem`;
+   
+      } else if (scrollReduced <= 160) {
+        mundoMejorRef.current.innerText = `Escribo para no buscarme un trabajo real`;
+    
 
-    } else if (scrollReduced <= 160) {
-      mundoMejorRef.current.innerText = ` MÁS JUSTO`
-      mundoMejorRef.current.style.fontFamily = `Verdana`;
-      mundoMejorRef.current.style.fontSize = `2rem`;
-
-    } else {
-      mundoMejorRef.current.innerText = ` mucho mejor   `;
-      mundoMejorRef.current.style.fontFamily = `Amatic SC`;
-      mundoMejorRef.current.style.fontSize = `5rem`;
-      mundoMejorRef.current.style.lineHeight = `5rem`;
-
-
+      } else {
+        mundoMejorRef.current.innerText = `Me llamo Elena y soy escritora`;
+ 
+      }
     }
   }, [scrollTotal, scrollReduced]);
   console.log("scroll en about", scrollReduced);
 
   return (
     <div className="about-dinamic-container">
-  <TextCarousel text={texToCarousel}/>
-    <GlitchText text={"Un poco sobre mi"}/>
-   
+      <TextCarousel text={texToCarousel} />
+      <GlitchText text={"Un poco sobre mi"} />
+
       <div className="about-data-container">
         <div className="about-text-wrapper">
-        <div className="about-text-content">
-        <p className="about-text" ref={mainTextRef}>
-            Elena Tejedor nació en Sevilla en 1988. Se ha movido poco porque es
-            vaga, pero ha leído mucho. Cree que un mundo{" "}
-            <span ref={mundoMejorRef} className="animatable-text">
-              {" "}
-              mejor{"    "}
-            </span>{"  "}
-            es posible y necesario. Escribe sus dramas para costearse la
-            terapia, pero de momento tiene más neuras que novelas
-          </p>
+          <h1 ref={mundoMejorRef} className="animatable-text"></h1>
+
+          <div className="about-text-content">
+            <p className="about-text" ref={mainTextRef}>
+              Elena Tejedor nació en Sevilla en 1988. Se ha movido poco porque
+              es vaga, pero ha leído mucho. Cree que un mundo mejor es posible y
+              necesario. Escribe sus dramas para costearse la terapia, pero de
+              momento tiene más neuras que novelas
+            </p>
+          </div>
         </div>
-         
-        </div>
-    
+
         <div className="about-pic-wrapper">
           <img src="elena2.jpg" className="about-pic"></img>
-         
-          </div>
-         
+        </div>
       </div>
-      
     </div>
   );
 };

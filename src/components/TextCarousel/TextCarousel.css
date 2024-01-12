@@ -24,9 +24,10 @@
   margin: 0;
   display: flex;
   overflow: hidden;
-  min-height: 30vh;
-  max-height: 30vh;
+  min-height: 7vh;
+  max-height: 7vh;
   align-items:end ;
+  background-color:fuchsia;
 
 
 }
@@ -39,7 +40,6 @@
   margin: 0;
   overflow: hidden;
   transform: rotate(90deg);
-
   min-width: min-content;
   max-width: min-content;
   height: 7vh;
@@ -52,7 +52,7 @@
 .carousel-text {
   white-space: pre;
   font-family: "Roboto";
-  color: rgb(243, 243, 136);
+  color: rgb(231, 231, 68);
   font-weight: 700;
   font-size: 3rem;
 

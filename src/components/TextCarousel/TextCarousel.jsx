@@ -3,8 +3,8 @@ import "./TextCarousel.css";
 const TextCarousel = ({text}) => {
   return (
     <div className="text-carousel-container">
-     <div className="carousel-wrapper-second">
-        <p className="carousel-text-second">
+     <div className="carousel-wrapper">
+        <p className="carousel-text">
        {text}
         </p>
       </div>
@@ -14,8 +14,8 @@ const TextCarousel = ({text}) => {
         </p>
       </div>
       
-      <div className="carousel-wrapper-second">
-        <p className="carousel-text-second">
+      <div className="carousel-wrapper">
+        <p className="carousel-text">
        {text}
         </p>
       </div>
@@ -24,8 +24,8 @@ const TextCarousel = ({text}) => {
          {text}
         </p>
       </div>
-      <div className="carousel-wrapper-second">
-        <p className="carousel-text-second">
+      <div className="carousel-wrapper">
+        <p className="carousel-text">
        {text}
         </p>
       </div>
@@ -34,8 +34,8 @@ const TextCarousel = ({text}) => {
          {text}
         </p>
       </div>
-      <div className="carousel-wrapper-second">
-        <p className="carousel-text-second">
+      <div className="carousel-wrapper">
+        <p className="carousel-text">
        {text}
         </p>
       </div>
