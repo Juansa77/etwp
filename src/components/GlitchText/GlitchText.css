@@ -3,31 +3,46 @@
 .glitch-component-container{
    width: 100%;
    max-width: 100%;
-   height: 100%;
+   height: 55vh;
+   max-height: 55vh;
    align-content: center;
-   align-items: center;
    display: flex;
    justify-content: right;
    margin-right: 2rem;
+   flex-direction: column;
+
+   margin-bottom: 0;
 
 }
 
-.glitch-wrapper-component {
+.glitch-n-container{
+   display: flex;
    width: 100%;
+}
+
+.glitch-number{
+   font-size: 10rem;
+   margin: 0;
+   font-family: 'Rubik Moonrocks', sans-serif;
+   padding: 2rem;
+}
+
+.glitch-wrapper-component {
+   width: 50%;
    height: 50%;
    display: flex;
    align-items: center;
-   justify-content: right;
    width: 100%;
    background-color: transparent;
    margin-right: 4rem;
-   border-top: 3px solid black;
+   border-top: 5px solid black;
+   margin-top: 0;
   
 }
 
 .glitch-component {
    position: relative;
-   font-size: 180px;
+   font-size: 100px;
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1.2;

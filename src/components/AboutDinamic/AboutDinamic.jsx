@@ -38,9 +38,7 @@ const AboutDinamic = () => {
   return (
     <div className="about-dinamic-container">
       <TextCarousel text={texToCarousel} />
-      <GlitchText text={"Un poco sobre mi"} />
-
-      <div className="about-data-container">
+<div className="about-data-container">
         <div className="about-text-wrapper">
           <h1 ref={mundoMejorRef} className="animatable-text"></h1>
 
@@ -58,6 +56,7 @@ const AboutDinamic = () => {
           <img src="elena2.jpg" className="about-pic"></img>
         </div>
       </div>
+      <TextCarousel text={texToCarousel} />
     </div>
   );
 };

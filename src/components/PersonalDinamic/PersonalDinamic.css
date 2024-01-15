@@ -1,0 +1,6 @@
+.personal-dinamic-container{
+    height: 90vh;
+    max-height: 90vh;
+    display: flex;
+    background-color: blue;
+}

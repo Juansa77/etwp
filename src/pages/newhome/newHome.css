@@ -5,4 +5,7 @@ background-color: #47d3ff;
 background-attachment: fixed;
 width: 100%;
 max-width: 100%;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
 }

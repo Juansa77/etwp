@@ -27,8 +27,9 @@
   min-height: 7vh;
   max-height: 7vh;
   align-items:end ;
-  background-color:fuchsia;
 
+
+background-color: rgb(231, 231, 68);
 
 }
 
@@ -52,7 +53,7 @@
 .carousel-text {
   white-space: pre;
   font-family: "Roboto";
-  color: rgb(231, 231, 68);
+  color: fuchsia;
   font-weight: 700;
   font-size: 3rem;
 
