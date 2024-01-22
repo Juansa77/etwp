@@ -1,6 +1,132 @@
-.personal-dinamic-container{
-    height: 90vh;
-    max-height: 90vh;
-    display: flex;
-    background-color: blue;
+.personal-dinamic-container {
+  height: 90vh;
+  max-height: 90vh;
+  display: flex;
+
+  margin: 0 auto;
+  font-family:"Roboto";
+
+  font-size: 20px;
 }
+
+
+.personal-title{
+    transform: rotate(-90deg);
+    font-size: 5rem;
+    line-height: 2rem;
+    white-space: pre;
+}
+
+
+.personal-subtitle{
+    font-size: 3rem;
+}
+.personal-wrapper-1 {
+  min-width: 5%;
+  max-width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  border: 5px solid black;
+  box-sizing: border-box;
+ 
+}
+
+
+
+.personal-wrapper-2 {
+  min-width: 32%;
+  max-width: 32%;
+  min-height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+ 
+}
+
+.personal-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  min-height: 55%;
+  background-color: chartreuse;
+  border: 5px solid black;
+  box-sizing: border-box;
+}
+
+.personal-pic-wrapper {
+  min-height: 45%;
+  background-color: antiquewhite;
+  border: 5px solid black;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+
+.personal-pic{
+width: 100%;
+object-fit: cover;
+
+}
+
+.personal-wrapper-3 {
+    min-width: 32%;
+    max-width: 32%;
+    min-height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  
+   
+  }
+  
+  .personal-text-wrapper-2 {
+     padding: 1rem;
+    min-height: 30%;
+    background-color: rgb(240, 82, 82);
+    border: 5px solid black;
+    box-sizing: border-box;
+  }
+  
+  .personal-pic-wrapper-2 {
+    min-height: 70%;
+    background-color: antiquewhite;
+    border: 5px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+ 
+  .personal-wrapper-4 {
+    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  
+   
+  }
+  
+  .personal-text-wrapper-3 {
+    padding: 1rem;
+    min-height: 30%;
+    background-color: rgb(240, 57, 240);
+    border: 5px solid black;
+    box-sizing: border-box;
+  }
+  
+  .personal-pic-wrapper-3 {
+    min-height: 70%;
+    background-color: antiquewhite;
+    border: 5px solid black;
+    box-sizing: border-box;
+  }
+  
